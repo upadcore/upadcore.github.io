@@ -1,0 +1,7 @@
+# Site settings
+title: UP Junior Marketing Association
+description: "We Lead."
+
+# Build settings
+markdown: kramdown
+permalink: pretty

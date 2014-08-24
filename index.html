@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<script>
+	$('.navbar-default').addClass('navbar-hide');
+</script>
+
+<div class="row row-push-up">
+
+<div class="col-lg-12 container-full" id="test2">
+
+<div class="container-full-center col-lg-12">
+	<h1>Logo Here</h1>
+	<p>
+		The UP Junior Marketing Association (UP JMA)<br/>
+		is a university-wide student organization based in the<br/>
+		College of Business Administration,<br/>
+		University of the Philippines Diliman.<br/>
+	</p>
+
+</div>
+
+</div>
+</div>
+
+<div class="row">
+
+<div class="col-lg-12">
+
+<div class="container-full container-full-header" id="test">
+	<h1>About UP JMA</h1>
+	<p>
+		The UP Junior Marketing Association (UP JMA) is a university-wide student organization of over 300 members, based in the College of Business Administration, University of the Philippines, Diliman. Each member of the organization is drawn in by the exceptional and rewarding leadership, marketing, and project management experience the reputable organization embodies and guarantees.
+	</p>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+
+<div class="col-lg-12">
+
+<div class="container-full container-full-header">
+	<h1>Members of UP JMA</h1>
+	<p>
+		The UP Junior Marketing Association (UP JMA) is a university-wide student organization of over 300 members, based in the College of Business Administration, University of the Philippines, Diliman. Each member of the organization is drawn in by the exceptional and rewarding leadership, marketing, and project management experience the reputable organization embodies and guarantees.
+	</p>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+
+<div class="col-lg-12">
+
+<div class="container-full container-full-header">
+	<h1>K.I.D.S.</h1>
+	<p>
+		One of the best things about being a JMAer is the K.I.D.S (Kids Integrated Development through Schooling) program. This program provides educational assistance for 40 less fortunate but brilliant children, in partnership with Tahanan ng Panginoon (Varsity Hills, Loyola Heights chapter). With 40 children already involved in the program, UP JMA remains committed in its social and moral obligation to help others in the community.
+	</p>
+</div>
+
+</div>
+</div>
+
+<script>
+function isOnTop(elem) {
+	var docViewTop = $(window).scrollTop();
+	var elemTop = $(elem).offset().top;
+	return (elemTop <= docViewTop);
+}
+
+function isVisible(elem) {
+	var docViewTop = $(window).scrollTop();
+	var elemBottom = $(elem).offset().top + $(elem).height();
+
+	return (elemBottom >= docViewTop);
+}
+
+$(window).scroll(function () {
+    var myelement = $('#test');
+    if (isOnTop(myelement)) {
+        $('.navbar-default').removeClass('navbar-hide');
+    }
+    var myelement2 = $('#test2');
+    if (isVisible(myelement2)) {
+        $('.navbar-default').addClass('navbar-hide');
+    }
+});
+</script>
