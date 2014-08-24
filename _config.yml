@@ -5,3 +5,4 @@ description: "We Lead."
 # Build settings
 markdown: kramdown
 permalink: pretty
+baseurl: 'http://klmendoza1.github.io/sandbox-upjma'
