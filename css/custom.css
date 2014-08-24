@@ -37,7 +37,13 @@ body {
 	background-color: #252525;
 }
 
+
+
 @media (min-width: 768px) {
+
+	.navbar-nav.navbar-right {
+		height: 50px;
+	}
 
 	.navbar-default.navbar-hide {
 		top: -52px;
