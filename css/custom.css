@@ -1,3 +1,109 @@
+/* FONTS INITIALIZATION */
+@font-face {
+	font-family: 'Gotham';
+		src: 
+		url('/fonts/Gotham-Thin.otf') 
+		format('opentype');
+	font-weight: 100;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-ThinIta.otf') 
+		format('opentype');
+	font-weight: 100;
+	font-style: italic;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-XLight.otf') 
+		format('opentype');
+	font-weight: 200;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-XLightIta.otf') 
+		format('opentype');
+	font-weight: 200;
+	font-style: italic;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-Light.otf') 
+		format('opentype');
+	font-weight: 300;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-LightIta.otf') 
+		format('opentype');
+	font-weight: 300;
+	font-style: italic;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-Book.otf') 
+		format('opentype');
+	font-weight: 400;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-BookIta.otf') 
+		format('opentype');
+	font-weight: 400;
+	font-style: italic;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-Medium.otf') 
+		format('opentype');
+	font-weight: 500;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-MediumIta.otf') 
+		format('opentype');
+	font-weight: 500;
+	font-style: italic;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-Bold.otf') 
+		format('opentype');
+	font-weight: 600;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-BoldIta.otf') 
+		format('opentype');
+	font-weight: 600;
+	font-style: italic;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-Ultra.otf') 
+		format('opentype');
+	font-weight: 700;}
+
+@font-face {
+	font-family: 'Gotham';
+	src: 
+		url('/fonts/Gotham-UltraIta.otf') 
+		format('opentype');
+	font-weight: 700;
+	font-style: italic;}
+
 body {
 	padding-top:50px;
 	background-image: url('/img/abstract-red.jpg');
@@ -42,7 +148,28 @@ body {
 }
 
 h1 {
+	font-family: Gotham;
+}
+
+h1.container-title {
+	font-size: 40px;
 	margin-top: 0;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+}
+
+h1.container-title.container-title-bare, h1.container-title.container-title-darken {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 0;
+}
+
+h1.container-title.container-title-darken {
+	margin-left: -15px;
+	margin-right: -15px;
+	background-color: rgba(0,0,0,0.6);
 }
 
 .row:nth-of-type(odd)>.col-lg-12 {
@@ -56,9 +183,29 @@ h1 {
 	width: 100%;
 }
 
+.btn-holder {
+	width: 100%;
+	max-width: 300px;
+	margin: auto;
+}
+
+.a-login {
+	color: #252525;
+	font-size: 11px;
+	text-decoration: underline;
+}
+
+.a-login:active,
+.a-login:hover, 
+.a-login:focus {
+	color: #df0101;
+}
+
 .video-container-container {
 	width: 100%;
 	max-width: 640px;
+	margin: auto;
+	margin-bottom: 30px;
 }
 
 .video-container {
@@ -104,6 +251,39 @@ h1 {
 
 .btn-section.btn-section-black {
 	color: #262626;
+}
+
+.container-stick-bottom {
+	position: relative;
+}
+
+.par {
+	color: white;
+	max-width: 900px;
+	text-align: center;
+	margin: auto;
+}
+
+.par-stick-bottom {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.6);
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: 0;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+.iframe-map {
+	width: 100%;
+	height: calc(100vh - 194px);
+	/*margin-left: -15px;*/
+	margin-right: -15px;
+	margin-top: 0;
+	margin-bottom: 0;
+	border-style: none;
 }
 
 @media (min-width: 768px) {
@@ -153,6 +333,23 @@ h1 {
 		height: calc(100vh - 100px);
 	}
 
+	.row-map {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.container-map {
+		height: calc(100vh - 194px);
+		overflow: hidden;
+		padding: 0;
+	}
+
+}
+
+@media (min-height: 600px) {
+	.container-full-center {
+		margin-top: calc((100vh - 600px)/2);
+	}
 }
 
 @media (max-width: 768px) {
