@@ -2,14 +2,14 @@
 @font-face {
 	font-family: 'Gotham';
 		src: 
-		url('/fonts/Gotham-Thin.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-Thin.otf') 
 		format('opentype');
 	font-weight: 100;}
 
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-ThinIta.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-ThinIta.otf') 
 		format('opentype');
 	font-weight: 100;
 	font-style: italic;}
@@ -17,14 +17,14 @@
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-XLight.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-XLight.otf') 
 		format('opentype');
 	font-weight: 200;}
 
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-XLightIta.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-XLightIta.otf') 
 		format('opentype');
 	font-weight: 200;
 	font-style: italic;}
@@ -32,14 +32,14 @@
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-Light.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-Light.otf') 
 		format('opentype');
 	font-weight: 300;}
 
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-LightIta.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-LightIta.otf') 
 		format('opentype');
 	font-weight: 300;
 	font-style: italic;}
@@ -47,14 +47,14 @@
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-Book.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-Book.otf') 
 		format('opentype');
 	font-weight: 400;}
 
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-BookIta.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-BookIta.otf') 
 		format('opentype');
 	font-weight: 400;
 	font-style: italic;}
@@ -62,14 +62,14 @@
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-Medium.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-Medium.otf') 
 		format('opentype');
 	font-weight: 500;}
 
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-MediumIta.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-MediumIta.otf') 
 		format('opentype');
 	font-weight: 500;
 	font-style: italic;}
@@ -77,14 +77,14 @@
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-Bold.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-Bold.otf') 
 		format('opentype');
 	font-weight: 600;}
 
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-BoldIta.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-BoldIta.otf') 
 		format('opentype');
 	font-weight: 600;
 	font-style: italic;}
@@ -92,27 +92,27 @@
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-Ultra.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-Ultra.otf') 
 		format('opentype');
 	font-weight: 700;}
 
 @font-face {
 	font-family: 'Gotham';
 	src: 
-		url('/fonts/Gotham-UltraIta.otf') 
+		url('http://klmendoza1.github.io/sandbox-upjma/fonts/Gotham-UltraIta.otf') 
 		format('opentype');
 	font-weight: 700;
 	font-style: italic;}
 
 body {
 	padding-top:50px;
-	background-image: url('/img/abstract-red.jpg');
+	background-image: url('http://klmendoza1.github.io/sandbox-upjma/img/abstract-red.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 #jumbotron>.col-lg-12 {
-	background-image: url('/img/jumbotron.jpg');
+	background-image: url('http://klmendoza1.github.io/sandbox-upjma/img/jumbotron.jpg');
 	background-size: cover;
 }
 
