@@ -40,7 +40,7 @@
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
 	text-shadow: 2px 2px #252525;
-	top: -3px;
+	top: -2px;
 	position: relative;
 }
 
@@ -73,18 +73,6 @@
 	transition: all .4s;
 }
 
-/*
-.demo-4 .box:hover svg line {
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
-}
-
-.demo-4 .box:hover svg line {
-	stroke-width: 5;
-}
-
-*/
-
 .demo-4 .box svg line.top,
 .demo-4 .box svg line.bottom {
 	stroke-dasharray: 300; 
@@ -114,25 +102,3 @@
 	-webkit-transform: translateY(30px);
 	transform: translateY(30px);
 }
-
-/*
-.demo-4 .box:hover svg line.top {
-	-webkit-transform: translateX(0px);
-	transform: translateX(0px);
-}
-
-.demo-4 .box:hover svg line.bottom {
-	-webkit-transform: translateX(0px);
-	transform: translateX(0px);
-}
-
-.demo-4 .box:hover svg line.left {
-	-webkit-transform: translateY(0px);
-	transform: translateY(0px);
-}
-
-.demo-4 .box:hover svg line.right {
-	-webkit-transform: translateY(0px);
-	transform: translateY(0px);
-}
-*/

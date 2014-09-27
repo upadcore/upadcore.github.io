@@ -106,6 +106,9 @@
 
 body {
 	padding-top:50px;
+}
+
+body#home {
 	background-image: url('/img/abstract-red.jpg');
 	background-size: cover;
 	background-attachment: fixed;
@@ -125,6 +128,16 @@ body {
 .navbar-default .navbar-nav>li>a {
 	text-transform: uppercase;
 	color: #fff;
+	font-family: Gotham;
+	transition: background-color 0.5s ease, border-width 0.5s ease, padding-bottom 0.5s ease;
+}
+
+.navbar-default .navbar-nav>li>a.scroll {
+	border-width: 0 0 3px 0;
+	border-style: solid;
+	border-color: #df0101;
+	padding-bottom: 12px;
+	transition: border-width 0.5s ease, padding-bottom 0.5s ease;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
@@ -141,6 +154,8 @@ body {
 	background-color: #df0101;
 	transition: background-color 0.5s ease;
 }
+
+
 
 .row {
 	margin-left: 0;
@@ -172,6 +187,14 @@ h1.container-title.container-title-darken {
 	background-color: rgba(0,0,0,0.6);
 }
 
+h1.container-title.container-title-darken {
+	position: absolute;
+	width: calc(100% + 30px);
+	margin-left: -15px;
+	margin-right: -15px;
+	z-index: 2;
+}
+
 .row:nth-of-type(odd)>.col-lg-12 {
 	background-color: #252525;
 }
@@ -193,12 +216,14 @@ h1.container-title.container-title-darken {
 	color: #252525;
 	font-size: 11px;
 	text-decoration: underline;
+	transition: color 0.5s ease;
 }
 
 .a-login:active,
 .a-login:hover, 
 .a-login:focus {
 	color: #df0101;
+	transition: color 0.5s ease;
 }
 
 .video-container-container {
@@ -274,6 +299,7 @@ h1.container-title.container-title-darken {
 	padding: 20px;
 	color: white;
 	text-align: center;
+	z-index: 1;
 }
 
 .iframe-map {
@@ -285,6 +311,44 @@ h1.container-title.container-title-darken {
 	margin-bottom: 0;
 	border-style: none;
 }
+
+.carousel {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+/* CAROUSEL FADE */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.item:nth-child(1) {
+  background: black;
+}
+.item:nth-child(2) {
+  background: black;
+}
+.item:nth-child(3) {
+  background: black;
+}
+/*END*/
 
 @media (min-width: 768px) {
 
@@ -302,6 +366,17 @@ h1.container-title.container-title-darken {
 		transition: top 0.5s ease;
 	}
 
+	.navbar-default .navbar-nav>li>a.btn {
+		border-radius: 0;
+		border-width: 3px;
+		border-color: rgba(255,255,255,0.7);
+		padding: 7px 14px 5px 14px;
+		position: relative;
+		top: 6px;
+		letter-spacing: 2px;
+		font-size: 12px;
+	}
+
 	.row-push-up {
 		position: relative;
 		margin-top: -50px;
@@ -311,6 +386,12 @@ h1.container-title.container-title-darken {
 		height: 100vh;
 		min-height: 600px;
 		max-height: 1200px;
+	}
+
+	.container-full.container-full-jumbotron {
+		height: calc(100vh - 50px);
+		min-height: 550px;
+		max-height: 1150px;
 	}
 
 	.container-full.container-full-button {
@@ -344,6 +425,13 @@ h1.container-title.container-title-darken {
 		padding: 0;
 	}
 
+	footer {
+		background-color: #252525;
+	}
+
+	footer * {
+		color: white;
+	}
 }
 
 @media (min-height: 600px) {
@@ -356,4 +444,74 @@ h1.container-title.container-title-darken {
 	.btn-section {
 		font-size: 15px;
 	}
+}
+
+/* CAROUSEL CONFIGURATIONS */
+#members-carousel .carousel-inner div {
+	height: calc(100vh - 100px);
+	max-height: 1200px;
+	min-height: 600px;
+	width: 100%;
+	background-size: cover;
+}
+
+#members-carousel .carousel-inner div#adhoc {
+	background-image: url('/img/members/adhoc.jpg');
+}
+
+#members-carousel .carousel-inner div#combo {
+	background-image: url('/img/members/combo.jpg');
+}
+
+#members-carousel .carousel-inner div#extaffair {
+	background-image: url('/img/members/extaffair.jpg');
+}
+
+#members-carousel .carousel-inner div#finance {
+	background-image: url('/img/members/finance.jpg');
+}
+
+#members-carousel .carousel-inner div#int {
+	background-image: url('/img/members/int.jpg');
+}
+
+#members-carousel .carousel-inner div#pubcomm {
+	background-image: url('/img/members/pubcomm.jpg');
+}
+
+#members-carousel .carousel-inner div#socpub {
+	background-image: url('/img/members/socpub.jpg');
+}
+
+.kids-slideshow {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.kids-slideshow .images {
+	height: 600px;
+	width: 5320px;
+	background-image: url('/img/kids/collage_kids.jpg');
+	background-size: cover;
+	-webkit-animation: slideshow 90s linear infinite;
+	-moz-animation:    slideshow 90s linear infinite;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes slideshow {
+	0% {-webkit-transform: translateX(0);}    
+	100% {-webkit-transform: translateX(-2660px);}
+}
+
+@-moz-keyframes slideshow {
+	0% {-moz-transform:    translateX(0);}    
+	100% {-moz-transform:    translateX(-2660px);}
+}
+
+/* ABOUT AND OTHER DRUGS */
+.row.infopage {
+
 }
