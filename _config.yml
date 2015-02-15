@@ -1,8 +1,7 @@
 # Site settings
-title: UP Junior Marketing Association
-description: "We Lead."
+title: A World Away
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-baseurl: 'http://klmendoza1.github.io/sandbox-upjma'
+

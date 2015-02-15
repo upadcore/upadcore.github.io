@@ -1,166 +1,62 @@
 ---
-layout: default
+title: Color Palette
 ---
-<script>$('body').id('home')</script>
-<div class="row" id="jumbotron">
-<div class="col-lg-12 container-full container-full-jumbotron">
 
-<div class="container-full-center col-lg-12">
-	<img src="img/logo.png" class="img-responsive" alt="UP JMA" id="logo">
-	<p>
-		The UP Junior Marketing Association (UP JMA)<br/>
-		is a university-wide student organization based in the<br/>
-		College of Business Administration,<br/>
-		University of the Philippines Diliman.<br/>
-	</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="img/favicon.ico" rel="icon" type="image/x-icon">
+	<title>{% if page.title %}{{ page.title}}{{' | '}}{{site.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css"-->
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/component.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
+	<script src="{{ site.baseurl }}/js/jquery-2.1.1.min.js"></script>
+	<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+</head>
+
+    <body>
+
+    	<img src="{{ site.baseurl }}/img/AdCoreWeek9LogoFinal.png" alt="The Ignition: AdCore Week 9" width="300">
+<h2>Color Scheme</h2>
+
+<ul class="navigation">
+  <a class="main" id="format">Choose Format</a>
+  <li class="n1" id="hex1"><a>HEX - #1234EF</a></li>
+	<li class="n2" id="hex2"><a>HEX - 1234EF</a></li>
+	<li class="n3" id="rgb"><a>RGB - (255, 255, 255)</a></li>
+	<li class="n4" id="rgba"><a>RGBA - (12, 12, 12, 1.0)</a></li>
+</ul>
+
+<div class="row colors">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class="color" id="color-1" style="background-color:#f15e27" data-clipboard-text="#f15e27"></div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class="color" id="color-2" style="background-color:#f48020" data-clipboard-text="#f48020"></div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class="color" id="color-3" style="background-color:#f8a046" data-clipboard-text="#f8a046"></div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class="color" id="color-4" style="background-color:#f6f7bd" data-clipboard-text="#f6f7bd"></div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class="color" id="color-5" style="background-color:#655643" data-clipboard-text="#655643"></div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+<div class="color" id="color-6" style="background-color:#54c2ba" data-clipboard-text="#54c2ba"></div>
 </div>
 
 </div>
+<div id="overlay">
+	<h1>Copied!</h1>
 </div>
-
-<div class="row" id="about">
-
-<div class="col-lg-12">
-
-<!--div class="container-full container-full-button"-->
-<div>
-	<h1 class="container-title container-title-bare">About UP JMA</h1>
-	<div class="video-container-container">
-		<div class="video-container">
-			<iframe src="http://www.youtube.com/embed/EUK_fezp5LQ" frameborder="0" width="560" height="315"></iframe>
-		</div>
-	</div>
-	<p class="par">
-		The UP Junior Marketing Association (UP JMA) is a university-wide student organization of over 300 members, based in the College of Business Administration, University of the Philippines, Diliman. Each member of the organization is drawn in by the exceptional and rewarding leadership, marketing, and project management experience the reputable organization embodies and guarantees.
-	</p>
-</div>
-
-<a class="btn btn-primary btn-lg btn-block btn-section">Learn more about the organization &#187;</a>
-
-</div>
-</div>
-
-<div class="row" id="events">
-
-<div class="col-lg-12">
-
-
-<a class="btn btn-primary btn-lg btn-block btn-section">See all events &#187;</a>
-
-</div>
-</div>
-
-<div class="row" id="members">
-
-<div class="col-lg-12">
-
-<div class="container-full container-full-button container-stick-bottom">
-	<h1 class="container-title container-title-darken container-title-overlay">Members of UP JMA</h1>
-
-	<div id="members-carousel" class="carousel carousel-fade slide" data-ride="carousel">
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner">
-			<div class="item active" id="adhoc"></div>
-			<div class="item" id="combo"></div>
-			<div class="item" id="extaffair"></div>
-			<div class="item" id="finance"></div>
-			<div class="item" id="int"></div>
-			<div class="item" id="pubcomm"></div>
-			<div class="item" id="socpub"></div>
-		</div>
-	</div>
-
-	<p class="par-stick-bottom">
-		The UP Junior Marketing Association (UP JMA) is a university-wide student organization of over 300 members, based in the College of Business Administration, University of the Philippines, Diliman. Each member of the organization is drawn in by the exceptional and rewarding leadership, marketing, and project management experience the reputable organization embodies and guarantees.
-	</p>
-</div>
-
-<a class="btn btn-primary btn-lg btn-block btn-section">Meet the members &#187;</a>
-
-</div>
-</div>
-
-<div class="row" id="kids">
-
-<div class="col-lg-12">
-
-<div class="container-full container-full-button container-stick-bottom">
-	<h1 class="container-title container-title-darken container-title-overlay">K.I.D.S.</h1>
-	<div class="kids-slideshow">
-	   <div class="images"></div>
-	</div>
-	<p class="par-stick-bottom">
-		One of the best things about being a JMAer is the K.I.D.S (Kids Integrated Development through Schooling) program. This program provides educational assistance for 40 less fortunate but brilliant children, in partnership with Tahanan ng Panginoon (Varsity Hills, Loyola Heights chapter). With 40 children already involved in the program, UP JMA remains committed in its social and moral obligation to help others in the community.
-	</p>
-</div>
-
-<a class="btn btn-primary btn-lg btn-block btn-section">Know more about K.I.D.S. &#187;</a>
-
-</div>
-</div>
-
-
-<div class="row" id="contact">
-
-<div class="col-lg-12">
-
-<div class="container-full container-full-button">
-	<h1 class="container-title container-title-bare">Contact Us</h1>
-	<div class="row row-map">
-		<div class="col-lg-8 col-lg-push-4 container-map">
-		<iframe class="iframe-map" src="https://www.google.com/maps/embed/v1/place?q=Virata+School+of+Business,+Quezon+City,+Metro+Manila,+Philippines&key=AIzaSyBvyt5Rz-96RenqeqS0gVshvkHGMNUCj4U"></iframe>
-		</div>
-		<div class="col-lg-4 col-lg-pull-8">
-			<h2>UP College of Business Administration</h2>
-			<h4>
-				U.P. Campus, Quezon City<br/>
-				(02) 929 7991
-			</h4>
-		</div>
-	</div>
-</div>
-
-<a class="btn btn-primary btn-lg btn-block btn-section">Send us a message &#187;</a>
-
-</div>
-</div>
-
-<script>
-	function onTop(elem) {
-		var docViewTop = $(window).scrollTop();
-		var elemTop = $(elem).offset().top;
-		var elemBot = elemTop + $(elem).height();
-		//alert(docViewTop+"\n"+elemBot);
-		return ((elemTop-50 <= docViewTop) && (elemBot-50 >= docViewTop));
-	}
-
-	$(window).scroll(function () {
-		var sections = ['about', 'events', 'members', 'kids', 'contact'];
-		for (i = 0; i < sections.length; i++) { 
-			if (onTop($('#'+sections[i]+''))) {
-				$('#nav-'+sections[i]+'').addClass('scroll');
-			}
-			else {$('#nav-'+sections[i]+'').removeClass('scroll');}
-		}
-	});
-
-	$('.carousel').carousel({
-		pause: "false"
-	});
-</script>
-<!--script>
-
-	$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-		|| location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-				$('html,body').animate({
-				scrollTop: target.offset().top-49
-				}, 1000);
-				return false;
-			}
-		}
-	});
-</script-->
+	<script src="{{ site.baseurl }}/js/ZeroClipboard.js"></script>
+    <script src="{{ site.baseurl }}/js/main.js"></script>
+    </body>
+</html>
