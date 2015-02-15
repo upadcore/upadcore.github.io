@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'Intro';
-	/*src: 
-		url('http://klmendoza1.github.io/sandbox-adcoreweek9/fonts/Intro.otf')*/
-	src:
+	src: 
+		url('http://klmendoza1.github.io/sandbox-adcoreweek9/fonts/Intro.otf')
+	/*src:
 		url('/fonts/Intro.otf') 
-		format('opentype');
+		format('opentype');*/
 	}
 
 body {
