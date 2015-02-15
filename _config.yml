@@ -4,4 +4,5 @@ title: A World Away
 # Build settings
 markdown: kramdown
 permalink: pretty
+baseurl: http://klmendoza1.github.io/sandbox-adcoreweek9
 
