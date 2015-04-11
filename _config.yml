@@ -4,3 +4,4 @@ title: UP Advertising Core
 # Build settings
 markdown: kramdown
 permalink: pretty
+baseurl: http://klmendoza1.github.io/sandbox-infocore
