@@ -1,98 +1,63 @@
 @font-face {
-	font-family: 'Intro';
+	font-family: 'Myriad Pro';
+		src: 
+		url('/fonts/MyriadPro-Regular.otf') 
+		format('opentype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
 	src: 
-		url('http://klmendoza1.github.io/sandbox-adcoreweek9/fonts/Intro.otf')
-	/*src:
-		url('/fonts/Intro.otf') 
-		format('opentype');*/
-	}
+		url('/fonts/MyriadPro-Bold.otf') 
+		format('opentype');
+	font-weight: 500;
+}
 
 body {
-	overflow: hidden;
-	margin:0;
+	overflow-x: hidden;
 }
 
-img {
-	display: block;
-	margin: auto;
+.navbar {
+	position: absolute;
+	width: 100%;
+	z-index: 1030;
 }
 
-h2 {
-	margin-top: 0;
-	color: #1d1b1c;
-	font-family: Intro;
+.navbar.colorize {
+	background-color: black;
+	position: fixed;
+	right: 0;
+	left: 0;
 }
 
-div.col-md-4.col-sm-6.col-xs-6 {
-	padding-left: 0;
-	padding-right: 0;
+.navbar-menu {
+	background-color: black;
+	position: fixed;
+	width: 325px;
+	top: 0;
+	right: -325px;
+	height: 100vh;
+	transition: right 0.5s;
 }
 
-@media (min-width: 768px) {
-	div.color {
-		height:calc((100vh - 214px) / 2);
-		/*width:calc( 100vw / 3 );*/
-	}
+.navbar-menu.active {
+	right: 0px;
+	transition: right 0.5s;
 }
 
-@media (max-width: 768px) {
-	div.color {
-		height:calc((100vh - 214px) / 3);
-		/*width:calc( 100vw / 3 );*/
-	}
+.navbar-toggle {
+	display: initial;
 }
 
-/*
-div.color#color-1 {
-	background-color: #f15e27
-}
-div.color#color-2 {
-	background-color: #f48020
-}
-div.color#color-3 {
-	background-color: #f8a046
-}
-div.color#color-4 {
-	background-color: #f6f7bd
-}
-div.color#color-5 {
-	background-color: #655643
-}
-div.color#color-6 {
-	background-color: #54c2ba
-}
-*/
-
-div#overlay {
-  position: absolute;
-  display: none;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  z-index: 300;
+.navbar-menu ul {
+	list-style-type: none;
 }
 
-div#overlay.active.visible {
-	display: block;
-	opacity: 1.0;
-		  -webkit-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+.navbar-menu ul li {
+	font-size: 3em;
 }
 
-div#overlay.active.visible.fade {
-	opacity: 0.0;
-	  -webkit-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-div#overlay h1 {
-	text-align: center;
-vertical-align: middle;
-line-height: 90vh;
-font-family: Intro;
-color: white;
+h1, h2, h3 {
+	font-family: Myriad Pro !important;
 }

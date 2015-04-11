@@ -1,5 +1,5 @@
 ---
-title: Color Palette
+title: Alvin
 ---
 
 <!DOCTYPE html>
@@ -13,50 +13,141 @@ title: Color Palette
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css"-->
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/component.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
 	<script src="{{ site.baseurl }}/js/jquery-2.1.1.min.js"></script>
 	<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
 </head>
 
     <body>
+<header id="navbar" class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">UP Advertising Core</a>
+    </div>
+    <div class="navbar-toggle">
+      <a onclick="toggle()">Menu p0h</a>
+    </div>
+    <div class="navbar-menu" id="navbar-menu">
+      <a onclick="toggle()">Menu p0h</a>
+      <ul>
+        <li>Home</li>
+        <li>Wow</li>
+      </ul>
+    </div>
+  </div>
+</header>
 
-    	<img src="{{ site.baseurl }}/img/AdCoreWeek9LogoFinal.png" alt="The Ignition: AdCore Week 9" width="300">
-<h2>Color Scheme</h2>
-
-<ul class="navigation">
-  <a class="main" id="format">Choose Format</a>
-  <li class="n1" id="hex1"><a>HEX - #1234EF</a></li>
-	<li class="n2" id="hex2"><a>HEX - 1234EF</a></li>
-	<li class="n3" id="rgb"><a>RGB - (255, 255, 255)</a></li>
-	<li class="n4" id="rgba"><a>RGBA - (12, 12, 12, 1.0)</a></li>
-</ul>
-
-<div class="row colors">
-<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-<div class="color" id="color-1" style="background-color:#f15e27" data-clipboard-text="#f15e27"></div>
+<div class="row" id="jumbotron">
+<div class="col-lg-12">
+<h1>Creativity is in everyone</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-<div class="color" id="color-2" style="background-color:#f48020" data-clipboard-text="#f48020"></div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-<div class="color" id="color-3" style="background-color:#f8a046" data-clipboard-text="#f8a046"></div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-<div class="color" id="color-4" style="background-color:#f6f7bd" data-clipboard-text="#f6f7bd"></div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-<div class="color" id="color-5" style="background-color:#655643" data-clipboard-text="#655643"></div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-<div class="color" id="color-6" style="background-color:#54c2ba" data-clipboard-text="#54c2ba"></div>
 </div>
 
+<div class="row">
+<div class="col-lg-12">
+<h1>What is UP AdCore?</h1>
+<h3>Lorem ipsum dolor sit amet</h3>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 </div>
-<div id="overlay">
-	<h1>Copied!</h1>
 </div>
-	<script src="{{ site.baseurl }}/js/ZeroClipboard.js"></script>
-    <script src="{{ site.baseurl }}/js/main.js"></script>
+
+<div class="row">
+<div class="col-lg-12">
+<h1>What We Do</h1>
+<h3>Lorem ipsum dolor sit amet</h3>
+<h2>Design solutions</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<div class="row">
+<div class="col-lg-12 cold-md-12 col-sm-10 col-sm-offset-1 col-xs-12">
+<div class="row">
+  <!--PANELS GO HERE-->
+<div class="col-lg-4 cold-md-3 col-sm-2 col-xs-2">
+<div class="container-fluid">Wuw</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<h2>Brand activation</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<div class="row">
+<div class="col-lg-12 cold-md-12 col-sm-10 col-sm-offset-1 col-xs-12">
+<div class="row">
+  <!--PANELS GO HERE-->
+<div class="col-lg-4 cold-md-3 col-sm-2 col-xs-2">
+<div class="container-fluid">Wuw</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-12">
+<h1>Who We Are</h1>
+<h3>Lorem ipsum dolor sit amet</h3>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+</div>
+
+<footer>
+<div class="row">
+
+</div>
+</footer>
+
+<script>
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
+
+function toggle() {
+  var navbar_menu = document.getElementById('navbar-menu');
+  if (hasClass(navbar_menu,'active')) {
+    navbar_menu.classList.remove('active');
+  }
+  else {
+    navbar_menu.classList.add('active');
+  }
+}
+</script>
+
+<script>
+var didScroll = false;
+
+var jumbotron = document.getElementById('jumbotron');
+var jumbotron_bcr = jumbotron.getBoundingClientRect();
+var navbar = document.getElementById('navbar');
+var navbar_bcr = navbar.getBoundingClientRect();
+window.onscroll = doOnScroll;
+
+function doOnScroll() {
+    didScroll = true;
+    jumbotron_bcr = jumbotron.getBoundingClientRect();
+    navbar_bcr = navbar.getBoundingClientRect();
+    if((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
+      if (!(hasClass(navbar,'colorize'))) {
+        navbar.classList.add('colorize');
+      }
+    }
+    else {
+      if ((hasClass(navbar,'colorize')) && (jumbotron.getBoundingClientRect().top == 0)) {
+        navbar.classList.remove('colorize');
+      }
+    }
+}
+
+setInterval(function() {
+    if(didScroll) {
+        didScroll = false;
+    }
+}, 100);
+</script>
+
     </body>
 </html>
