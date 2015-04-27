@@ -115,13 +115,13 @@ html, body {
 }
 
 .navbar-menu ul li, .navbar-menu ul li a {
-	font-size: 2em;
+	font-size: 24px;
 	color: white;
 	text-decoration: none !important;
 }
 
-.navbar-menu ul li ul li{
-	font-size: 0.7em;
+.navbar-menu ul li ul li, .navbar-menu ul li ul li a{
+	font-size: 20px;
 }
 
 .row.row-main {
