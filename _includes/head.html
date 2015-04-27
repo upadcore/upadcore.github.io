@@ -1,29 +1,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="img/favicon.ico" rel="icon" type="image/x-icon">
+	<link href="{{ site.baseurl }}/img/favicon.ico" rel="icon" type="image/x-icon">
 	<title>{% if page.title %}{{ page.title}}{{' | '}}{{site.title }}{% else %}{{ site.title }}{% endif %}</title>
-	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="{{ site.description }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css"-->
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/component.css">
 	<script src="{{ site.baseurl }}/js/jquery-2.1.1.min.js"></script>
 	<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-	<script src="{{ site.baseurl }}/js/masonry.js"></script>
-	<!--script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=API_KEY">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script-->
 </head>
