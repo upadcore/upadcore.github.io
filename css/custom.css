@@ -114,9 +114,10 @@ html, body {
 	padding-left: 0;
 }
 
-.navbar-menu ul li {
+.navbar-menu ul li, .navbar-menu ul li a {
 	font-size: 2em;
 	color: white;
+	text-decoration: none !important;
 }
 
 .navbar-menu ul li ul li{
