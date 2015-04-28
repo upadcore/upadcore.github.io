@@ -397,10 +397,24 @@ h1, h2, h3, h5, h6, a, p, ul>li, ol>li {
 	.div-portfolio>div>a>div {
 		margin-top: 0 !important;
 		margin-bottom: 0 !important;
+		box-shadow: none;
+	}
+	.div-portfolio>div>a>div:nth-of-type(1) {
+		box-shadow: none !important;
 	}
 	.div-portfolio>div>a>div:nth-of-type(2) {
 		left: 0 !important;
 		width: 100% !important;
+	}
+	.div-portfolio>div:nth-of-type(6)>a>div:nth-of-type(2) {
+		padding-top: calc((75% - 45px) / 2);
+		padding-bottom: calc((75% - 45px) / 2);
+	}
+	.div-portfolio h3 {
+		font-size: 22px;
+	}
+	.div-portfolio h5 {
+		margin-top: 0;
 	}
 }
 
@@ -435,6 +449,27 @@ h1, h2, h3, h5, h6, a, p, ul>li, ol>li {
 .div-portfolio>div>a:hover>div:nth-of-type(2), .div-portfolio>div>a>div:nth-of-type(2):hover {
 	opacity: 1;
 	transition: opacity 0.2s;
+}
+
+.div-portfolio>div:nth-of-type(6)>a>div:nth-of-type(1) {
+	background-color: rgba(0,0,0,0);
+	border-style: solid;
+	box-sizing: border-box;
+	border-width: 3px;
+	padding-top: calc((75% - 6px) / 2);
+	padding-bottom: calc((75% - 6px) / 2);
+	border-color: rgb(109, 185, 138);
+}
+
+.div-portfolio>div:nth-of-type(6)>a>div:nth-of-type(2) {
+	opacity: 1;
+	background-color: rgba(0,0,0,0);
+	transition: background-color 0.2s;
+}
+
+.div-portfolio>div:nth-of-type(6)>a:hover>div:nth-of-type(2) {
+	background-color: rgba(0,0,0,0.2);
+	transition: background-color 0.2s;
 }
 
 .div-portfolio h3, .div-portfolio h5 {
