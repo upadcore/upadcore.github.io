@@ -828,3 +828,52 @@ div.card {
 .img-corevalues + p {
 	text-align: center;
 }
+
+.page-section>div:first-of-type>h1.nosub {
+	margin-bottom: 20px;
+}
+
+.page-section.page-section-pad {
+	padding-bottom: 40px;
+}
+
+#row-clients {
+	text-align: center;
+	margin-top: 20px;
+}
+
+img.img-responsive.img-client {
+	max-height: 85px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+	img.img-responsive.img-client {
+		max-height: 50px;
+	}
+}
+
+
+.panel-dept {
+	overflow: hidden;
+	max-height: 0;
+	opacity: 0;
+	transition: max-height 0.5s, opacity 0.5s;
+}
+
+.panel-dept.panel-dept-active {
+	max-height: 10000px;
+	opacity: 1;
+	transition: max-height 1s, opacity 0.5s;
+}
+
+.panel-dept>div {
+	margin-bottom: 10px;
+}
+
+.panel-dept>div:last-of-type {
+	margin-bottom: 0;
+}
