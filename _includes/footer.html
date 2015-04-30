@@ -13,9 +13,9 @@
 
 <div class="row">
 <div id="logos" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-<img src="{{ site.baseurl }}img/juiceletter.png" id="juiceletter" class="img-responsive img-footer-logo" alt="Juiceletter">
-<img src="{{ site.baseurl }}img/teenspeak.png" id="teenspeak" class="img-responsive img-footer-logo" alt="TeenSpeak">
-<img src="{{ site.baseurl }}img/panafao.png" id="panafao" class="img-responsive img-footer-logo" alt="PANA-FAO">
+<a target="_blank" href="http://issuu.com/thejuiceletter"><img src="{{ site.baseurl }}img/juiceletter.png" id="juiceletter" class="img-responsive img-footer-logo" alt="Juiceletter"></a>
+<a target="_blank" href="https://www.facebook.com/upadcoreteenspeak"><img src="{{ site.baseurl }}img/teenspeak.png" id="teenspeak" class="img-responsive img-footer-logo" alt="TeenSpeak"></a>
+<a target="_blank" href="http://panaf.com.ph/programs/federation-of-advertising-organization/"><img src="{{ site.baseurl }}img/panafao.png" id="panafao" class="img-responsive img-footer-logo" alt="PANA-FAO"></a>
 
 </div>
 </div>
@@ -37,24 +37,18 @@
 <div class="col-lg-4 col-md-4 col-sm-4">
 <ul>
 <li><a href="{{ site.baseurl }}about">About</a>
-<ul>
-<li><a href="{{ site.baseurl }}about#corevalues">Core Values</a></li>
-<li><a href="{{ site.baseurl }}about#clients">Our Past Clients</a></li>
-<li><a href="{{ site.baseurl }}about#recognition">Our Success Stories</a></li>
-<li><a href="{{ site.baseurl }}about#engagements">What We Engage In</a></li>
-</ul>
+
+{% include ul-about.html %}
+
 </li>
 </ul>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4">
 <ul>
 <li><a href="{{ site.baseurl }}members">Members</a>
-<ul>
-<li><a href="{{ site.baseurl }}members#application">Application Process</a></li>
-<li><a href="{{ site.baseurl }}members#execore">The Executive Core</a></li>
-<li><a href="{{ site.baseurl }}members#departments">The Departments &amp; Teams</a></li>
-<li><a href="{{ site.baseurl }}members#memcard">Membership Card</a></li>
-</ul>
+
+{% include ul-members.html %}
+
 </li>
 </ul>
 </div>

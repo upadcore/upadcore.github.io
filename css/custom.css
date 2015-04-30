@@ -622,12 +622,12 @@ h1, h2, h3, h5, h6, a, p, ul>li, ol>li {
   margin-bottom: 25px;
 }
 
-.footer .img-footer-logo:last-of-type {
+.footer a:last-of-type .img-footer-logo {
   margin-bottom: 0;
 }
 }
 
-.footer .img-footer-logo:last-of-type {
+.footer a:last-of-type .img-footer-logo {
 	padding-right: 0;
 }
 
@@ -877,3 +877,27 @@ img.img-responsive.img-client {
 .panel-dept>div:last-of-type {
 	margin-bottom: 0;
 }
+
+#app-process>div>h1 {
+	text-align: center;
+	font-size: 130px;
+	margin-top: 0;
+}
+
+#app-process>div>h3 {
+	min-height: 53px;
+	text-align: center;
+	margin-top: 0;
+}
+
+#app-process>div>h3>small {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+#app-process>div>p {
+	margin-bottom: 0;
+	font-size: 12px;
+}
+
