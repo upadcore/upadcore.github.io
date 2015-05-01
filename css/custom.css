@@ -47,7 +47,9 @@ html, body {
 	float: left;
 }
 
-
+.navbar-brand:hover {
+	color: white !important;
+}
 
 .navbar-menu {
 	background-color: #F36523;
@@ -837,6 +839,12 @@ div.card {
 	padding-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+	.page-section.page-section-pad.page-section-pad-hidden-xs {
+	padding-bottom: 0;
+}
+}
+
 #row-clients {
 	text-align: center;
 	margin-top: 20px;
@@ -901,3 +909,13 @@ img.img-responsive.img-client {
 	font-size: 12px;
 }
 
+.img-award {
+	margin: auto;
+	margin-top: 15px;
+}
+
+@media (min-width: 1200px) {
+.img-award {
+	max-width: 200px;
+}
+}
