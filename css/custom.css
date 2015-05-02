@@ -57,7 +57,7 @@ html, body {
 	width: 325px;
 	top: 0;
 	right: -325px;
-	height: 100vh !important;
+	height: calc(100vh) !important;
 	overflow-y: auto;
 	transition: all 0.5s;
 	padding: 20px 35px;
@@ -123,7 +123,7 @@ html, body {
 }
 
 .navbar-menu ul li ul li, .navbar-menu ul li ul li a{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .row.row-main {
@@ -508,6 +508,12 @@ h1, h2, h3, h5, h6, a, p, ul>li, ol>li {
 	margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+	.div-portfolio h3.reduce {
+		font-size: 21px;
+	}
+}
+
 .div-portfolio h5 {
 	margin-top: 4px;
 	margin-bottom: 0;
@@ -559,25 +565,25 @@ h1, h2, h3, h5, h6, a, p, ul>li, ol>li {
 	cursor: pointer;
 }
 
-.footer>.row:first-of-type h6, .footer>.row:first-of-type h6 small {
+.footer>.row:first-of-type h5, .footer>.row:first-of-type h5 small {
 	color: white;
 	text-align: right;
 }
 
-.footer>.row:first-of-type h6 {
+.footer>.row:first-of-type h5 {
 	margin-bottom: 0;
-	margin-top: 10px;
+	margin-top: 0;
 }
 
 @media (max-width: 1199px) {
-.footer>.row:first-of-type h6 {
+.footer>.row:first-of-type h5 {
 	margin-right: 15px;
 }	
 }
 
 @media (max-width: 767px) {
-.footer>.row:first-of-type h6 {
-	margin-top: 173px;
+.footer>.row:first-of-type h5 {
+	margin-top: 170px;
 }	
 }
 
@@ -612,7 +618,7 @@ h1, h2, h3, h5, h6, a, p, ul>li, ol>li {
 .footer .img-footer-logo {
 	display: inline-block;
 	padding-right: 100px;
-	max-height: 50px;
+	max-height: 75px;
 }
 
 @media (max-width: 768px) {
@@ -919,3 +925,46 @@ img.img-responsive.img-client {
 	max-width: 200px;
 }
 }
+
+.navbar-menu ul.social {
+  margin-top: 20px;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-color: white;
+  text-align: right;
+  padding-top: 15px;
+}
+
+ul.social li a {
+	font-family: FontAwesome !important;
+}
+
+ul.social li {
+	display: inline;
+}
+
+.navbar-menu ul.social li a {
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+.navbar-menu ul.social li:last-of-type a {
+	margin-right: 0;
+}
+
+.footer ul.social {
+	  margin-top: 4px;
+}
+
+.footer ul.social li a {
+margin-right: 3px;
+  font-size: 20px;
+	}
+
+	.footer ul.social li:last-of-type a {
+	margin-right: 0;
+}
+
+.adjust { position:relative; }
+.adjust>span:first-of-type{ position:absolute; top:-48px;}
+.adjust.adjust-more>span:first-of-type{ position:absolute; top:-60px;}

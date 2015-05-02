@@ -10,11 +10,8 @@
       <a onclick="toggle()">&#xf00d;</a>
       <ul>
 <li><a href="{{ site.baseurl }}">Home</a></li>
-<li>Services
-<ul>
-<li>Design Solutions</li>
-<li>Brand Activation</li>
-</ul>
+<li><a href="{{ site.baseurl }}#services">Services</a>
+{% include ul-services.html %}
 </li>
 <li><a href="{{ site.baseurl }}about">About</a>
 {% include ul-about.html %}
@@ -23,6 +20,7 @@
 {% include ul-members.html %}
 </li>
 </ul>
+{% include ul-social.html %}
     </div>
   </div>
 </header>

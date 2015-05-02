@@ -26,11 +26,10 @@
 <div class="col-lg-4 col-md-4 col-sm-4">
 <ul>
 <li><a href="{{ site.baseurl }}">Home</a></li>
-<li><a>Services</a>
-<ul>
-<li><a>Design Solutions</a></li>
-<li><a>Brand Activation</a></li>
-</ul>
+<li><a href="{{ site.baseurl }}#services">Services</a>
+
+{% include ul-services.html %}
+
 </li>
 </ul>
 </div>
@@ -57,13 +56,16 @@
 </div>
 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-7">
 <!--img src="{{ site.baseurl }}img/UP-Advertising-Core-Logo-MASTER.png" class="img-responsive img-logo" alt="UP AdCore"-->
-<h6>UP Advertising Core<br>
-	<small>Room 406<br>
+<h5>Contact us<br>
+	<small><!--Room 406<br>
 		Cesar E.A. Virata School of Business<br>
 		University of the Philippines Diliman<br>
-		1100 Quezon City, Philippines
+		1100 Quezon City, Philippines<br>-->
+		UP Advertising Core<br/>
+		upadcore@gmail.com
+		{% include ul-social.html %}
 	</small>
-</h6>
+</h5>
 </div>
 </div>
 
