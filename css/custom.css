@@ -294,6 +294,7 @@ h1, h2, h3, h5, h6, a, p, ul>li, ol>li {
 .dropdown-orange {
 	width: 200px;
 	margin-left: auto;
+	padding-bottom: 25px;
 }
 
 .dropdown-orange>.toggle-main,.dropdown-orange>.toggle-dropdown {
@@ -732,6 +733,7 @@ h1, h2, h3, h5, h6, a, p, ul>li, ol>li {
 	text-decoration: none !important;
 	color: white;
 	font-size: 14px;
+	cursor: pointer;
 }
 
 @media (max-width: 768px) {
