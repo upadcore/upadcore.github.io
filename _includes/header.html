@@ -1,0 +1,26 @@
+<header id="navbar" class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="">UP Advertising Core</a>
+    </div>
+    <div class="navbar-toggle">
+      <a onclick="toggle()">&#xf0c9;</a>
+    </div>
+    <div class="navbar-menu" id="navbar-menu">
+      <a onclick="toggle()">&#xf00d;</a>
+      <ul>
+<li><a href="/">Home</a></li>
+<li><a href="/#services">Services</a>
+{% include ul-services.html %}
+</li>
+<li><a href="/about/">About</a>
+{% include ul-about.html %}
+</li>
+<li><a href="/members/">Members</a>
+{% include ul-members.html %}
+</li>
+</ul>
+{% include ul-social.html %}
+    </div>
+  </div>
+</header>

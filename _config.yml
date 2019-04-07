@@ -1,0 +1,6 @@
+# Site settings
+title: UP Advertising Core
+
+# Build settings
+markdown: kramdown
+permalink: pretty
