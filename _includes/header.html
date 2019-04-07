@@ -1,26 +1,44 @@
 <header id="navbar" class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="">UP Advertising Core</a>
-    </div>
-    <div class="navbar-toggle">
-      <a onclick="toggle()">&#xf0c9;</a>
-    </div>
-    <div class="navbar-menu" id="navbar-menu">
-      <a onclick="toggle()">&#xf00d;</a>
-      <ul>
-<li><a href="/">Home</a></li>
-<li><a href="/#services">Services</a>
-{% include ul-services.html %}
-</li>
-<li><a href="/about/">About</a>
-{% include ul-about.html %}
-</li>
-<li><a href="/members/">Members</a>
-{% include ul-members.html %}
-</li>
-</ul>
-{% include ul-social.html %}
+      <a class="navbar-brand" href="/#home"><img src="/img/UP-Advertising-Core-Logo-MASTER.png" class="navbar-left" alt="UP AdCore" id="logo" width="50" height="50"></a>
+      <a class="navbar-brand" href="/#home" id="navbar-brand-home">Home</a>
+      <div class="navbar-dropdown">
+        <a class="navbar-brand" href="/about/" id="navbar-brand-dropdown">About</a>
+        <button class="dropbtn">
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="navbar-dropdown-content">
+          <a href="/about/#recognition">Our Success Stories</a>
+          <a href="/about/#engagements">What We Engage In</a>
+          <a href="/about/#juiceletter">Our Official Magazine</a>
+          <a href="/about/#panafao">Our Affiliation</a>
+        </div>
+      </div>
+      <div class="navbar-dropdown">
+        <a class="navbar-brand" href="/services/" id="navbar-brand-dropdown">Services</a>
+        <button class="dropbtn">
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="navbar-dropdown-content">
+          <a href="/services/#clients">Our Past Clients</a>
+          <a href="/services/#teenspeak">Teenspeak</a>
+          <a href="/services/#portfolio">What We Do</a>
+        </div>
+      </div>
+      <div class="navbar-dropdown">
+        <a class="navbar-brand" href="/members/" id="navbar-brand-dropdown">Members</a>
+        <button class="dropbtn">
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="navbar-dropdown-content">
+          <a href="/members/#application">Application Process</a>
+          <a href="/members/#execore">The Executive Core</a>
+          <a href="/members/#departments">The Departments &amp; Teams</a>
+          <a href="/members/#memcard">Membership Card</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </header>
