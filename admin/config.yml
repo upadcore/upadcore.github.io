@@ -7,4 +7,14 @@ publish_mode: editorial_workflow
 media_folder: "img"
 
 collections:
+- label: "Page"
+  name: "page"
+  folder: "pages/"
+  create: true
+  identifier_field: title
+  extension: html
+  fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Permalink", name: "permalink", widget: "string"}
+    - {label: "Body", name: "body", widget: "text"}
 
