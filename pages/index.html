@@ -1,16 +1,8 @@
 ---
 title:
+permalink: /
+layout: default
 ---
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
-
-{% include head.html %}
-
-    <body>
-
-{% include header.html %}
 
 <div class="row row-main" id="jumbotron">
   <div class="col-lg-10 col-lg-offset-1 col-lg-12-main">
@@ -145,8 +137,6 @@ title:
   </div>
 </div>
 
-{% include footer.html %}
-
 <script>
 
 /* NAVIGATION HEADER*/
@@ -211,7 +201,7 @@ $('.button-more').click(function(event){
 </script>
           
 
-{% include smoothscroll-script.html %}
+<!-- Netlify admin redirect script -->
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -223,5 +213,3 @@ $('.button-more').click(function(event){
     });
   }
 </script>
-    </body>
-</html>
