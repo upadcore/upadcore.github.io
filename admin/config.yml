@@ -1,0 +1,10 @@
+# https://www.netlifycms.org/docs/add-to-your-site/#configuration
+
+backend:
+  name: git-gateway
+  branch: master
+publish_mode: editorial_workflow
+media_folder: "img"
+
+# collections:
+
