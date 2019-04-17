@@ -4,7 +4,7 @@ permalink: /members
 layout: default
 ---
 
-<div class="row row-main page-section page-section-white">
+<!-- <div class="row row-main page-section page-section-white">
   <div class="col-lg-10 col-lg-offset-1 col-lg-12-main">
     <h1>Members of UP AdCore</h1>
     <div class="row">
@@ -23,7 +23,7 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <div class="row row-main page-section page-section-colored page-section-green page-section-pad adjust">
   <span id="application"></span>
   <div class="col-lg-10 col-lg-offset-1 col-lg-12-main col-md-12 col-md-12-main">
@@ -145,11 +145,18 @@ layout: default
             <div class="visible-lg">Under the President</div>
             <div class="hidden-lg">Pres.</div>
           </label>
+          <label class="btn btn-jumbotron" data-target="#dept-panels" data-slide-to="6">
+            <input type="radio" autocomplete="off">
+            <div class="visible-lg">Executive Core</div>
+            <div class="hidden-lg">ExeCore</div>
+          </label>
         </div>
       </div>
     </div>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
+
+      <!-- CREATIVES -->
       <div class="item active">
         <div class="img-wrapper">
           <div class="row">
@@ -215,6 +222,8 @@ layout: default
           </div>
         </div>
       </div>
+
+      <!-- FINANCE AND CORPORATE -->
       <div class="item">
         <div class="img-wrapper">
           <div class="row">
@@ -247,6 +256,8 @@ layout: default
           </div>
         </div>
       </div>
+
+      <!-- HUMAN RESOURCES -->
       <div class="item">
         <div class="img-wrapper">
           <div class="row">
@@ -290,6 +301,8 @@ layout: default
           </div>
         </div>
       </div>
+
+      <!-- PUBLIC RELATIONS AND PROMOTIONS -->
       <div class="item">
         <div class="img-wrapper">
           <div class="row">
@@ -366,6 +379,8 @@ layout: default
             </div> -->
         </div>
       </div>
+
+      <!-- SEAL -->
       <div class="item">
         <div class="img-wrapper">
           <div class="row">
@@ -420,6 +435,8 @@ layout: default
             </div> -->
         </div>
       </div>
+
+      <!-- UTP -->
       <div class="item">
         <div class="img-wrapper">
           <div class="row">
@@ -475,6 +492,48 @@ layout: default
           </div>
         </div>
       </div>
+
+      <div class="item">
+        <div class="img-wrapper">
+          <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-0pt5 col-lg-12-main">
+              <h1>The Executive Core</h1>
+              <h3><small>AdCore&#8217;s outstanding leaders</small></h3>
+              <div class="row">
+                <div class="col-sm-12">
+                  <img src="/wp/wp-content/uploads/2016/10/execore.jpg" class="img-responsive img-execore">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                  <div class="row" id="execore-names">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                      <h5>Nikka<br class="visible-xs"/> Mabuti<br/><small>VP for Public Relations<br>and Promotions</small></h5>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                      <h5>Katlyn<br class="visible-xs"/> Sadural<br/><small>VP for Special Events<br>and Logistics</small></h5>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                      <h5>Bettina<br class="visible-xs"/> Abad Santos<br/><small>Year 11 President</small></h5>
+                      <br/><br/>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                      <h5>Ryan<br class="visible-xs"/> Dela Rosa<br/><small>VP for Creatives</small></h5>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                      <h5>Deina<br class="visible-xs"/> Blancaflor<br/><small>VP for Human Resources</small></h5>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                      <h5>Shara<br class="visible-xs"/> Santiago<br/><small>VP for Finance<br/>and Corporate Affairs</small></h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -484,7 +543,7 @@ layout: default
 {% include header-script-static.html %}
 
 <script>
-  var depts = ['crt','fca','hr','prp','seal','pres'];
+  var depts = ['crt','fca','hr','prp','seal','pres', 'execore'];
   var curr;
 
   $('.button-dept').click(function(event){
@@ -503,6 +562,6 @@ layout: default
     });
     setTimeout(function (){curr.addClass('panel-dept-active');}, 000);
     //curr.addClass('panel-dept-active');
-    
+
   });
 </script>
