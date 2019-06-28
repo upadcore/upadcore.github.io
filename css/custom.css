@@ -208,9 +208,32 @@ html, body {
     margin-top: 0;
 }
 
+.row.row-main.header {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
 .row.row-main {
-	margin-left: 0;
-	margin-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#homecol1 {
+	text-align: center;
+	padding-top: 6%;
+}
+
+#homecol1img {
+	text-align: center;
+	padding-top: 2%;
+}
+
+.new-navbar-brand {
+	color: white !important;
+	text-decoration: none !important;
+	font-size: 125%;
 }
 
 /*
@@ -243,12 +266,12 @@ html, body {
 */
 
 #jumbotron {
-	background-image: url('/img/jumbotron.jpg');
+	background-image: url('/img/home1.png');
 	background-size: cover;
-	background-attachment: fixed;
 	min-height: 100vh;
 	padding-top: 50px;
 }
+
 
 #jumbotron h1, #jumbotron p {
 	color: white;
@@ -259,6 +282,53 @@ html, body {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#know {
+	background-image: url('/img/home2.png');
+	background-size: cover;
+	min-height: 100vh;
+	min-width: 100%;
+	padding-top: 50px;
+}
+
+#know h1, #partner h1 {
+	text-align: center;
+	font-size: 720%;
+	padding-top: 9%;
+}
+
+#know h3, #partner h3 {
+	font-size: 250%;
+	text-align: center;
+}
+
+#know button, #partner button {
+	background-color: transparent;
+	border: solid;
+	border-radius: 36px;
+	border-width: thin;
+	color: black;
+	padding-right: 3%;
+	padding-left: 3%;
+	padding-top: -100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+#know-text-1, #partner-text-1 {
+	font-size: 150% !important;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+#know-text-2, #partner-text-2 {
+	padding-right: 20%;
+	padding-left: 20%;
+	margin-bottom: 40%;
 }
 
 .btn-jumbotron {
