@@ -220,6 +220,31 @@ html, body {
 	margin-right: auto;
 }
 
+#design .column, #beforefooter .column {
+	float: left;
+	width: 33.33%;
+}
+
+#design .column img {
+	width: 100%;
+}
+
+#beforefooter1 {
+	width: 50%;
+}
+
+#beforefooter2 {
+	width: 25%;
+}
+
+#beforefooter3 {
+	width: 12%;
+}
+
+#brand .column img {
+	width: 70%;
+}
+
 #homecol1 {
 	text-align: center;
 	padding-top: 6%;
@@ -286,21 +311,42 @@ html, body {
 
 #know {
 	background-image: url('/img/home2.png');
-	background-size: cover;
-	min-height: 100vh;
-	min-width: 100%;
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 #know h1, #partner h1 {
 	text-align: center;
-	font-size: 720%;
+	font-size: 650%;
 	padding-top: 9%;
 }
 
-#know h3, #partner h3 {
-	font-size: 250%;
+#design .row, #brand .row {
 	text-align: center;
+	margin-bottom: 5%;
+}
+
+#beforefooter .row {
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#design h1, #brand h1 {
+	text-align: center;
+	font-size: 650%;
+	padding-top: 3%;
+}
+
+#know h3, #partner h3 {
+	font-size: 175%;
+	text-align: center;
+}
+
+
+#design h3, #brand h3 {
+	font-size: 175%;
+	text-align: center;
+	padding-bottom: 3%;
 }
 
 #know button, #partner button {
@@ -319,16 +365,47 @@ html, body {
 }
 
 
-#know-text-1, #partner-text-1 {
+#know-text-1, #partner-text-1, #design-text-1 {
 	font-size: 150% !important;
 	padding-right: 20%;
 	padding-left: 20%;
 }
 
-#know-text-2, #partner-text-2 {
+#brand-text-1 {
+	font-size: 150% !important;
 	padding-right: 20%;
 	padding-left: 20%;
-	margin-bottom: 40%;
+	color: white;
+}
+
+#know-text-2 {
+	padding-right: 20%;
+	padding-left: 20%;
+	margin-bottom: 25%;
+}
+
+#partner-text-2 {
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+#partner-clients {
+	padding-bottom: 10%;
+}
+
+#partner-services {
+	padding-bottom: 5%;
+}
+
+#carousel {
+	background-image: url('/img/home3.png');
+	background-size: cover;
+	min-height: 100vh;
+	min-width: 50%;
+	margin-left: -3%;
+	margin-top: -15%;
+	margin-bottom: -10%;
+	padding-top: 50px;	
 }
 
 .btn-jumbotron {
@@ -434,6 +511,18 @@ p {
 	background-color: #F36523;
 }
 
+.page-section.page-section-colored.page-section-gray {
+	background-color: #E4E6EB;
+}
+
+.page-section.page-section-colored.page-section-black {
+	background-color: #2C2E30;
+}
+
+.page-section.page-section-colored.page-section-blacker {
+	background-color: #1f2021;
+}
+
 .page-section.page-section-colored.page-section-yellow h1,.page-section.page-section-colored.page-section-yellow>div:first-of-type>h3>small {
 	color: #F36523;
 }
@@ -444,6 +533,14 @@ p {
 	
 .page-section.page-section-colored.page-section-blue {
 	background-color: #D0DEEA;
+}
+
+.page-section.page-section-colored.page-section-gray h1 {
+	color: #909296;
+}
+
+.page-section.page-section-colored.page-section-black h1 {
+	color: white;
 }
 
 #memcard {
