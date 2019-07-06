@@ -229,6 +229,30 @@ html, body {
 	width: 100%;
 }
 
+#stories .column {
+	float: left;
+	width: 50%;
+}
+
+#contact-card .column {
+	float: left;
+	width: 25%;
+}
+
+#contact-card img {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#contact-column2 {
+	width: 50% !important;
+}
+
+.contact-inner-column {
+	float: left;
+	width: 50% !important;
+}
+
 #beforefooter1 {
 	width: 50%;
 }
@@ -290,13 +314,35 @@ html, body {
 }
 */
 
-#jumbotron {
+#jumbotron-home {
 	background-image: url('/img/home1.png');
 	background-size: cover;
 	min-height: 100vh;
 	padding-top: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
+#jumbotron-about {
+	background-image: url('/img/about6.png');
+	background-size: cover;
+	background-position: center 45%;
+	min-height: 100vh;
+	padding-top: 50px;
+}
+
+#jumbotron-contact {
+	background-image: url('/img/contact6.png');
+	background-size: cover;
+	background-position: center 45%;
+	min-height: 100vh;
+	padding-top: 50px;
+}
+
+#darken-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 100vh;
+	padding-top: -100px;
+}
 
 #jumbotron h1, #jumbotron p {
 	color: white;
@@ -307,6 +353,30 @@ html, body {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#success {
+	background-image: url('/img/about2.png');
+	background-size: cover;
+	background-position: center 45%;
+	min-height: 100vh;
+	padding-top: 50px;
+}
+
+#success h1 {
+	color: white;
+	font-size: 750%;
+	text-align: center;
+	padding-top: 2%;
+}
+
+#stories {
+	margin-top: -25%;
+}
+
+#contact-us {
+	margin-top: -25%;
+	margin-bottom: -5%;
 }
 
 #know {
@@ -331,13 +401,17 @@ html, body {
 	margin-bottom: 2%;
 }
 
+#beforefooter .contact-row {
+	min-height: 30vh;
+}
+
 #design h1, #brand h1 {
 	text-align: center;
 	font-size: 650%;
 	padding-top: 3%;
 }
 
-#know h3, #partner h3 {
+#know h3, #partner h3{
 	font-size: 175%;
 	text-align: center;
 }
@@ -349,7 +423,148 @@ html, body {
 	padding-bottom: 3%;
 }
 
-#know button, #partner button {
+#success h3 {
+	text-align: center;
+}
+
+#success button {
+	font-size: 100%;
+	text-align: center;
+	color: white !important;
+}
+
+.stories-card, #contact-card {
+	font-size: 150%;
+	text-align: center;
+	width: 80%;
+	background-size: fixed;
+	min-height: 60vh;
+	padding: 50px 3%;
+	border-radius: 36px;
+	border-width: thin;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
+
+#stories-card1 {
+	color: white !important;
+	background-image: url('/img/about3.jpg');
+	background-position: left 140% bottom 70%;
+}
+
+#stories-card2 {
+	color: white !important;
+	background-image: url('/img/about4.jpg');
+	background-position: left 30% top 15%;
+}
+
+#stories-card3 {
+	color: black !important;
+	background-image: url('/img/about5.jpg');
+	background-position: left 30% top 25%;
+}
+
+#contact-card {
+	background-color: white !important;
+	position: relative;
+}
+
+.contact-button {
+	font-size: 70%;
+	width: 20%;
+	background-color: transparent;
+	border: solid;
+	border-radius: 36px;
+	border-width: thin;
+	color: black !important;
+	padding-right: 3%;
+	padding-left: 3%;
+	padding-top: -100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#contact-button1 {
+	width: 20%;
+}
+
+#contact-button2 {
+	width: 40%;
+}
+
+.contact-button-2 {
+	font-size: 100%;
+	width: 70%;
+	background-color: transparent;
+	border: solid;
+	border-radius: 10px;
+	border-width: thin;
+	color: white !important;
+	padding-right: 3%;
+	padding-left: 3%;
+	padding-top: -100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	min-height: 10vh;
+}
+
+#contact-button3 {
+	background-color: #ff5521;
+}
+
+#contact-button4 {
+	background-color: #FD6A08;
+}
+
+#stories-button {
+	font-size: 50%;
+	background-color: transparent;
+	border: solid;
+	border-radius: 36px;
+	border-width: thin;
+	color: white !important;
+	padding-right: 3%;
+	padding-left: 3%;
+	padding-top: -100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#stories-button1 {
+	font-size: 50%;
+	background-color: transparent;
+	border: solid;
+	border-radius: 36px;
+	border-width: thin;
+	color: black !important;
+	padding-right: 3%;
+	padding-left: 3%;
+	padding-top: -100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#stories-small1, #stories-small2 {
+	font-size: 50% !important;
+	color: white !important;
+}
+
+#stories-small3 {
+	font-size: 50% !important;
+	color: black !important	;
+}
+
+#know button, #partner button, #success button, #stories button {
 	background-color: transparent;
 	border: solid;
 	border-radius: 36px;
@@ -371,6 +586,13 @@ html, body {
 	padding-left: 20%;
 }
 
+#success-text-1 {
+	font-size: 150% !important;
+	padding-right: 20%;
+	padding-left: 20%;
+	color: white !important;
+}
+
 #brand-text-1 {
 	font-size: 150% !important;
 	padding-right: 20%;
@@ -382,6 +604,16 @@ html, body {
 	padding-right: 20%;
 	padding-left: 20%;
 	margin-bottom: 25%;
+}
+
+#success-text-2 {
+	padding-right: 20%;
+	padding-left: 20%;
+	margin-bottom: 25%;
+}
+
+#success-text-2 small {
+	color: white;
 }
 
 #partner-text-2 {
