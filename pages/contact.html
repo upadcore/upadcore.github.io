@@ -1,0 +1,179 @@
+---
+title: Contact
+permalink: /contact
+layout: default
+---
+
+<div id="jumbotron-contact">
+  <div class="row row-main header" id="jumbotron">
+      <div class="col-lg-2 col-lg-offset-0 col-md-2 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-6 col-xs-offset-0" id="homecol1">
+        <a class="new-navbar-brand" href="/about/"">ABOUT</a>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" id="homecol1">
+        <a class="new-navbar-brand" href="/services/"">SERVICES</a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-7" id="homecol1img">
+        <a href="/#">
+        <img src="/img/UP-Advertising-Core-Logo-MASTER.png" class="img-responsive img-logo" alt="UP AdCore" id="logo">
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" id="homecol1">
+        <a class="new-navbar-brand" href="/members/"">MEMBERS</a>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" id="homecol1">
+        <a class="new-navbar-brand" href="/contact/"">CONTACT US</a>
+      </div>
+      <!-- <img src="/img/calligraphy.png" class="img-responsive img-calligraphy" alt="Creativity is in everyone"> -->
+      <!-- <p>The UP Advertising Core is the only student run, not-for-profit<br class="hidden-xs"/> organization and advertising agency based in the Cesar E.A. Virata<br class="hidden-xs"/> School of Business, University of the Philippines, Diliman.</p> -->
+      <!-- <div class="text-center">
+        <div class="btn-group" role="group" aria-label="...">
+          <a class="btn btn-primary btn-jumbotron" role="button" href="/#know">KNOW</a>
+          <a class="btn btn-primary btn-jumbotron" role="button" href="/#collab">COLLABORATE</a>
+          <a class="btn btn-primary btn-jumbotron" role="button" href="/#join">JOIN</a>
+        </div>
+      </div> -->
+      <div class="invisibox"></div>
+  </div>
+</div>
+
+<div id="contact-us">
+  <div id="contact-card">
+    <div class="row">
+      <div class="column">
+        <img src="/img/contact2.png">
+      </div>
+      <div class="column" id="contact-column2">
+        <button class="contact-button" id="contact-button1">
+          DETAILS
+        </button>
+        <br>
+        <div class="row">
+          <div class="contact-inner-column">
+            <b>Josh Ambrosio</b><br>
+            President<br><br>
+            <img src="/img/contact3.png"> 
+            <img src="/img/contact4.png"> 
+            <img src="/img/contact5.png"> 
+            <br>@JoshAmbrosio
+          </div>
+          <div class="contact-inner-column">
+            <b>joshambrosio@gmail.com</b><br><br><br>
+            <b>(0995) 630 6808</b><br>
+            Phone
+          </div>
+        </div>
+        <br>
+        <button class="contact-button" id="contact-button2">
+          UP ADVERTISING CORE
+        </button>
+        <br><br>
+        <div class="row">
+          <div class="contact-inner-column">
+            <img src="/img/contact3.png"> 
+            <img src="/img/contact4.png"> 
+            <img src="/img/contact5.png"> 
+            <br>@UPAdcore
+          </div>
+          <div class="contact-inner-column">
+            <b>upadcore@gmail.com</b><br>
+            Email<br>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <button class="contact-button-2" id="contact-button3">
+          <b>APPLY AS A</b>
+        </button>
+        <br><br>
+        <button class="contact-button-2" id="contact-button4">
+          <b>WORK WITH US</b>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+<div class="row row-main page-section page-section-colored page-section-blacker" id="beforefooter">
+  <div class="contact-row">
+    <div class="row">
+      <div class="invisibox"></div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="/img/home9.png" id="beforefooter1">
+      </div>
+      <div class="column">
+        <img src="/img/home10.png" id="beforefooter2">
+      </div>
+      <div class="column">
+        <img src="/img/home11.png" id="beforefooter3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+/* NAVIGATION HEADER*/
+
+var didScroll = false;
+
+var jumbotron = document.getElementById('jumbotron');
+var jumbotron_bcr = jumbotron.getBoundingClientRect();
+var navbar = document.getElementById('navbar');
+var navbar_bcr = navbar.getBoundingClientRect();
+window.onscroll = doOnScroll;
+
+function doOnScroll() {
+    didScroll = true;
+    jumbotron_bcr = jumbotron.getBoundingClientRect();
+    navbar_bcr = navbar.getBoundingClientRect();
+    if((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
+      if (!(hasClass(navbar,'colorize'))) {
+        navbar.classList.add('colorize');
+      }
+    }
+    else {
+      if ((hasClass(navbar,'colorize')) && (jumbotron.getBoundingClientRect().top == 0)) {
+        navbar.classList.remove('colorize');
+      }
+    }
+}
+
+setInterval(function() {
+    if(didScroll) {
+        didScroll = false;
+    }
+}, 100);
+
+/* DROPDOWN */
+
+$(document).on('click', function(event) {
+  if ((!$(event.target).closest('.button-more#button-more-1').length)) {
+    $('.button-more#button-more-1').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
+  }
+  if ((!$(event.target).closest('.button-more#button-more-2').length)) {
+    $('.button-more#button-more-2').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
+  }
+});
+</script>
+
+{% include header-script.html %}
+
+<script>
+
+$('.button-more').click(function(event){
+  var thisdropdown = $(this).parent().next();
+  if (thisdropdown.hasClass('toggle-dropdown-active')) {
+    thisdropdown.removeClass('toggle-dropdown-active toggle-dropdown-visible');
+  }
+  else {
+    thisdropdown.addClass('toggle-dropdown-active');
+    setTimeout(function (){thisdropdown.addClass('toggle-dropdown-visible');}, 0);
+  }
+});
+
+</script>
+          
+
