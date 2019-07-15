@@ -234,6 +234,12 @@ html, body {
 	width: 50%;
 }
 
+#stories-card1 .column, #stories-card4 .column, #stories-card2 .column {
+	float: left;
+	width: 33.33% !important;
+}
+
+
 #contact-card .column {
 	float: left;
 	width: 25%;
@@ -471,20 +477,38 @@ html, body {
 
 #stories-card1 {
 	color: white !important;
-	background-image: url('/img/about3.jpg');
-	background-position: left 140% bottom 70%;
+	background-image: url('/img/about7.jpg');
+	background-position: left 10% bottom 70%;
 }
 
 #stories-card2 {
-	color: white !important;
-	background-image: url('/img/about4.jpg');
-	background-position: left 30% top 15%;
+	color: black !important;
+	background-image: url('/img/about10.jpg');
+	background-position: left 90% top 30%;
 }
 
 #stories-card3 {
-	color: black !important;
-	background-image: url('/img/about5.jpg');
-	background-position: left 30% top 25%;
+	color: white !important;
+	background-image: url('/img/about11.png');
+	background-position: left 30% top 100%;
+}
+
+#stories-card4 {
+	color: white !important;
+	background-image: url('/img/about9.jpg');
+	background-position: left 10% bottom 70%;
+}
+
+#stories-card5 {
+	color: white !important;
+	background-image: url('/img/about12.png');
+	background-position: left 30% top 100%;
+}
+
+#stories-card6 {
+	color: white !important;
+	background-image: url('/img/about13.png');
+	background-position: left 30% top 55%;
 }
 
 #contact-card {
@@ -575,12 +599,12 @@ html, body {
 	cursor: pointer;
 }
 
-#stories-small1, #stories-small2 {
+#stories-small1, #stories-small3 {
 	font-size: 50% !important;
 	color: white !important;
 }
 
-#stories-small3 {
+#stories-small2 {
 	font-size: 50% !important;
 	color: black !important	;
 }
