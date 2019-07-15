@@ -131,7 +131,7 @@ layout: default
       <div id="space_pls"></div>
 
       <div class="centerpls">
-        <button type="submit">Send</button>
+        <button type="submit">SUBMIT</button>
       </div>
       <div id="space_pls"></div><div id="space_pls"></div>
     </form>
@@ -142,64 +142,71 @@ layout: default
 
 </div>
 <script>
-  /* NAVIGATION HEADER*/
 
-  var didScroll = false;
+/* NAVIGATION HEADER*/
 
-  var jumbotron = document.getElementById('jumbotron');
-  var jumbotron_bcr = jumbotron.getBoundingClientRect();
-  var navbar = document.getElementById('navbar');
-  var navbar_bcr = navbar.getBoundingClientRect();
-  window.onscroll = doOnScroll;
+var didScroll = false;
 
-  function doOnScroll() {
+var jumbotron = document.getElementById('jumbotron-about');
+var jumbotron_bcr = jumbotron.getBoundingClientRect();
+var navbar = document.getElementById('navbar');
+var navbar_brand = document.getElementsByClassName('navbar-brand');
+var navbar_bcr = navbar.getBoundingClientRect();
+window.onscroll = doOnScroll;
+
+function doOnScroll() {
     didScroll = true;
     jumbotron_bcr = jumbotron.getBoundingClientRect();
     navbar_bcr = navbar.getBoundingClientRect();
     if((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
       if (!(hasClass(navbar,'colorize'))) {
+        $("#navbar").show("slow");
         navbar.classList.add('colorize');
+        navbar_brand.classList.add('colorize');
       }
     }
     else {
-      if ((hasClass(navbar,'colorize')) && (jumbotron.getBoundingClientRect().top == 0)) {
-        navbar.classList.remove('colorize');
+      if ((hasClass(navbar,'colorize')) && ((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) >= 0)) {
+        $("#navbar").hide("slow");
+        if(window.getComputedStyle(navbar).display == "none"){
+          navbar.classList.remove('colorize');
+        }
       }
     }
-  }
+}
 
-  setInterval(function() {
+setInterval(function() {
     if(didScroll) {
-      didScroll = false;
+        didScroll = false;
     }
-  }, 100);
+}, 100);
 
-  /* DROPDOWN */
+/* DROPDOWN */
 
-  $(document).on('click', function(event) {
-    if ((!$(event.target).closest('.button-more#button-more-1').length)) {
-      $('.button-more#button-more-1').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
-    }
-    if ((!$(event.target).closest('.button-more#button-more-2').length)) {
-      $('.button-more#button-more-2').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
-    }
-  });
+$(document).on('click', function(event) {
+  if ((!$(event.target).closest('.button-more#button-more-1').length)) {
+    $('.button-more#button-more-1').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
+  }
+  if ((!$(event.target).closest('.button-more#button-more-2').length)) {
+    $('.button-more#button-more-2').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
+  }
+});
 </script>
 
 {% include header-script.html %}
 
 <script>
 
-  $('.button-more').click(function(event){
-    var thisdropdown = $(this).parent().next();
-    if (thisdropdown.hasClass('toggle-dropdown-active')) {
-      thisdropdown.removeClass('toggle-dropdown-active toggle-dropdown-visible');
-    }
-    else {
-      thisdropdown.addClass('toggle-dropdown-active');
-      setTimeout(function (){thisdropdown.addClass('toggle-dropdown-visible');}, 0);
-    }
-  });
+$('.button-more').click(function(event){
+  var thisdropdown = $(this).parent().next();
+  if (thisdropdown.hasClass('toggle-dropdown-active')) {
+    thisdropdown.removeClass('toggle-dropdown-active toggle-dropdown-visible');
+  }
+  else {
+    thisdropdown.addClass('toggle-dropdown-active');
+    setTimeout(function (){thisdropdown.addClass('toggle-dropdown-visible');}, 0);
+  }
+});
 
 </script>
 
@@ -238,6 +245,10 @@ layout: default
       $(this).css("opacity", "0.55");
       $(this).css("margin-left", "30%")
       $(this).css("margin-right", "30%")
+    });
+
+    $('input').on('keypress', function(e) {
+        e.which !== 12 || $('[tabIndex=' + (+this.tabIndex + 1) + ']')[0].focus();
     });
   });
 </script>

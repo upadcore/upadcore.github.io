@@ -41,7 +41,11 @@ button[type=submit]{
 	border-color: white;
 	border-width: thick;
 	border-style: solid;
+	min-width: 25px;
+}
 
+button[type=submit]:hover{
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .centerpls{
@@ -1174,11 +1178,11 @@ p {
 
 .index-carousel li {
     background-color: #fff;
-    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .index-carousel .active {
-    background-color: #F36523;    
+    background-color: #F36523;
 }
 
 .div-portfolio>div>div>a>div:nth-of-type(1) {
