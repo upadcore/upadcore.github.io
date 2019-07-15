@@ -40,7 +40,7 @@ layout: default
   <div id="contact-card">
     <div class="row">
       <div class="column">
-        <img src="/img/contact2.png">
+        <img src="/img/contact9.png">
       </div>
       <div class="column" id="contact-column2">
         <button class="contact-button" id="contact-button1">
@@ -119,9 +119,10 @@ layout: default
 
 var didScroll = false;
 
-var jumbotron = document.getElementById('jumbotron');
+var jumbotron = document.getElementById('jumbotron-contact');
 var jumbotron_bcr = jumbotron.getBoundingClientRect();
 var navbar = document.getElementById('navbar');
+var navbar_brand = document.getElementsByClassName('navbar-brand');
 var navbar_bcr = navbar.getBoundingClientRect();
 window.onscroll = doOnScroll;
 
@@ -131,12 +132,17 @@ function doOnScroll() {
     navbar_bcr = navbar.getBoundingClientRect();
     if((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
       if (!(hasClass(navbar,'colorize'))) {
+        $("#navbar").show("slow");
         navbar.classList.add('colorize');
+        navbar_brand.classList.add('colorize');
       }
     }
     else {
-      if ((hasClass(navbar,'colorize')) && (jumbotron.getBoundingClientRect().top == 0)) {
-        navbar.classList.remove('colorize');
+      if ((hasClass(navbar,'colorize')) && ((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) >= 0)) {
+        $("#navbar").hide("slow");
+        if(window.getComputedStyle(navbar).display == "none"){
+          navbar.classList.remove('colorize');
+        }
       }
     }
 }
