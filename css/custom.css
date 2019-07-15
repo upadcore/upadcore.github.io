@@ -33,9 +33,23 @@ input[placeholder], input{
 	font-size: 20px;
 }
 
+button[type=submit]{
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+	width: 25%;
+	border-color: white;
+	border-width: thick;
+	border-style: solid;
+
+}
+
+.centerpls{
+	text-align: center;
+}
+
 #space_pls{
 	padding: 2%
-
 }
 
 
