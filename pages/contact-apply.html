@@ -44,20 +44,13 @@ layout: default
     </div>
     <div id="space_pls"></div>
 
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLScYdLYq2_N7-H5pcb4y3xh3f-xfTxsGh3uLf3QthigvAAt22A/formResponse" method="post" style="position:relative">
-
-
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+    onload="if(submitted) {window.location='/contact.html';}"></iframe>
+    <form id="plswork" action="https://docs.google.com/forms/d/e/1FAIpQLScYdLYq2_N7-H5pcb4y3xh3f-xfTxsGh3uLf3QthigvAAt22A/formResponse" method="post" style="position:relative" target="hidden_iframe" onsubmit="submitted=true;">
       <div id="space_pls"></div>
-      <input type="text" name="entry.1602290746" id="last-name">
-      <br><label id="last-name">LAST NAME</label><br>
-
-      <div id="space_pls"></div>
-      <input type="text" name="entry.1602290746">
-      <br><label>GIVEN NAME</label><br>
-
-      <div id="space_pls"></div>
-      <input type="text" name="entry.1602290746">
-      <br><label>MIDDLE NAME</label><br>
+      <input type="text" name="entry.1602290746" placeholder="DELA CRUZ, Juan P." id="last-name">
+      <br><label id="last-name">FULL NAME</label><br>
 
       <div id="space_pls"></div>
       <input type="text" placeholder="What do you want us to call you?" name="entry.1602290746" >
@@ -68,7 +61,7 @@ layout: default
       <br><label>STUDENT NUMBER</label>
 
       <div id="space_pls"></div>
-      <select class="select-css" name="entry.1602290746">
+      <select class="select-css" name="entry.1555017892">
         <option value="Archaeological Studies Program">Archaeological Studies Program</option>
         <option value="Asian Center">Asian Center</option>
         <option value="Asian Institute of Tourism">Asian Institute of Tourism</option>
@@ -116,22 +109,26 @@ layout: default
       <br><label>NETWORK PROVIDER</label>
 
       <div id="space_pls"></div>
-      <input type="text" name="emailAddress" required>
+      <input type="text" name="emailAddress" >
       <br><label>Mobile Number</label><br>
 
       <div id="space_pls"></div>
-      <input type="email" name="emailAddress" required>
+      <input type="email" name="emailAddress">
       <br><label>Email address</label><br>
 
       <div id="space_pls"></div>
-      <input type="text" name="emailAddress" required>
+      <input type="text" name="emailAddress" >
       <br><label>Facebook URL</label><br>
+
+      <div id="space_pls"></div>
+      <input type="text" name="emailAddress" >
+      <br><label>Link to Form 5 / ID</label><br>
 
       <div id="space_pls"></div>
       <div id="space_pls"></div>
 
       <div class="centerpls">
-        <button type="submit">SUBMIT</button>
+        <button type="submit" onclick="popUp()">SUBMIT</button>
       </div>
       <div id="space_pls"></div><div id="space_pls"></div>
     </form>
@@ -250,5 +247,9 @@ $('.button-more').click(function(event){
     $('input').on('keypress', function(e) {
         e.which !== 12 || $('[tabIndex=' + (+this.tabIndex + 1) + ']')[0].focus();
     });
+
+    function popUP(){
+      alert("YAY");
+    }
   });
 </script>
