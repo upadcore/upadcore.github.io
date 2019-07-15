@@ -33,10 +33,17 @@ input[type=text], input[type=email]{
 	align-content: center;
 	align-items: center;
 	border: none;
-	border-bottom: 4px solid white;
+	border-bottom: 6px solid white;
 	background:none !important;
 	padding: 2%;
-	opacity: 0.25;
+	opacity: 0.55;
+}
+
+label{
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	margin-left: 35%;
 }
 
 form{
@@ -44,8 +51,10 @@ form{
 }
 
 .navbar {
+	display: none;
 	position: absolute;
 	width: 100%;
+	height: 15%;
 	z-index: 1030;
 	border-radius: 0;
 	border-width: 0;
@@ -54,7 +63,9 @@ form{
 }
 
 .navbar.colorize {
-	background-color: #F36523;
+	background-image: url('/img/header.png');
+	background-size: cover;
+	background-position: center 72%;
 	position: fixed;
 	right: 0;
 	left: 0;
@@ -62,20 +73,16 @@ form{
 	transition: background-color 0.2s;
 }
 
+
 .navbar-brand.navbar-brand {
 	color: white;
-    padding: 0px 20px;
+    padding: 5%;
+    padding-left: 20px;
+    padding-right: 230px;
 }
 
-#navbar-brand-home{
-    padding-top: 14px;
-    padding-right: 20px;
-}
-
-#navbar-brand-dropdown{
-    color: white;
-    padding-top: 14px;
-    padding-right: 2px;
+#navbar-brand{
+    padding: 7% 50px;
 }
 
 .navbar-header {
@@ -101,7 +108,7 @@ form{
     outline: none;
     color: white;
     padding-right: 20px;
-    padding-top: 14px;
+    padding-top: 20px;
     background-color: inherit;
     font-family: inherit;
 }
@@ -109,7 +116,6 @@ form{
 .navbar-dropdown-content {
     display: none;
     position: absolute;
-    background-color: #FFF;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -258,6 +264,12 @@ form{
 	width: 50%;
 }
 
+#stories-card1 .column, #stories-card4 .column, #stories-card2 .column {
+	float: left;
+	width: 33.33% !important;
+}
+
+
 #contact-card .column {
 	float: left;
 	width: 25%;
@@ -370,21 +382,26 @@ form{
 }
 
 #jumbotron-contact {
-	background-image: url('/img/contact6.png');
+	background-image: url('/img/contact8.png');
 	background-size: cover;
 	background-position: center 45%;
 	min-height: 100vh;
 	padding-top: 50px;
 }
 
-#jumbotron-members{
-	background-image: urls
+#jumbotron-services {
+	background-image: url('/img/services2.png');
+	background-size: cover;
+	background-position: center 45%;
+	min-height: 110vh;
+	padding-top: 100px;
+	margin-top: -50px;
 }
 
 #darken-overlay {
 	background-color: rgba(0, 0, 0, 0.5);
 	min-height: 100vh;
-	padding-top: -100px;
+	margin-top: -48%;
 }
 
 #jumbotron h1, #jumbotron p {
@@ -427,10 +444,22 @@ form{
 	padding-top: 40px;
 }
 
-#know h1, #partner h1{
+#know h1, #partner h1, #teenspeak h1, #portfolio h1, #clients h1 {
 	text-align: center;
 	font-size: 650%;
 	padding-top: 9%;
+}
+
+#teenspeak {
+	margin-bottom: 10%;
+}
+
+#portfolio {
+	padding-bottom: 10%;
+}
+
+#clients {
+	padding-bottom: 7%;
 }
 
 #design .row, #brand .row {
@@ -493,20 +522,38 @@ form{
 
 #stories-card1 {
 	color: white !important;
-	background-image: url('/img/about3.jpg');
-	background-position: left 140% bottom 70%;
+	background-image: url('/img/about7.jpg');
+	background-position: left 10% bottom 70%;
 }
 
 #stories-card2 {
-	color: white !important;
-	background-image: url('/img/about4.jpg');
-	background-position: left 30% top 15%;
+	color: black !important;
+	background-image: url('/img/about10.jpg');
+	background-position: left 90% top 30%;
 }
 
 #stories-card3 {
-	color: black !important;
-	background-image: url('/img/about5.jpg');
-	background-position: left 30% top 25%;
+	color: white !important;
+	background-image: url('/img/about11.png');
+	background-position: left 30% top 100%;
+}
+
+#stories-card4 {
+	color: white !important;
+	background-image: url('/img/about9.jpg');
+	background-position: left 10% bottom 70%;
+}
+
+#stories-card5 {
+	color: white !important;
+	background-image: url('/img/about12.png');
+	background-position: left 30% top 100%;
+}
+
+#stories-card6 {
+	color: white !important;
+	background-image: url('/img/about13.png');
+	background-position: left 30% top 55%;
 }
 
 #contact-card {
@@ -597,12 +644,12 @@ form{
 	cursor: pointer;
 }
 
-#stories-small1, #stories-small2 {
+#stories-small1, #stories-small3 {
 	font-size: 50% !important;
 	color: white !important;
 }
 
-#stories-small3 {
+#stories-small2 {
 	font-size: 50% !important;
 	color: black !important	;
 }
@@ -662,6 +709,12 @@ form{
 	padding-right: 20%;
 	padding-left: 20%;
 	margin-bottom: 25%;
+}
+
+#teenspeak-text-1 {
+	padding-right: 17%;
+	padding-left: 17%;
+	margin-bottom: 5%;
 }
 
 #success-text-2 {
@@ -781,7 +834,7 @@ p {
 	margin-top: 0;
 }
 
-.page-section.page-section-white h1, .page-section.page-section-white>div:first-of-type>h3>small,
+.page-section.page-section-white h1,
 .page-section.page-section-colored.page-section-blue h1, .page-section.page-section-colored.page-section-blue>div:first-of-type>h3>small {
 	color: #F36523;
 }
@@ -1160,7 +1213,7 @@ p {
 }
 
 .footer>.row:last-of-type {
-	background-color: #CC480A;
+	background-color: #F0932E;
 }
 
 .footer ul {
@@ -1178,6 +1231,10 @@ p {
 	color: white !important;
 	text-decoration: none !important;
 	cursor: pointer;
+}
+
+.footer small {
+	font-size: 15px;
 }
 
 .footer>.row:first-of-type h5, .footer>.row:first-of-type h5 small {
