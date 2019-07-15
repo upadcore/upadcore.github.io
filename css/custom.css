@@ -1,15 +1,15 @@
 @font-face {
 	font-family: 'Myriad Pro';
-		src: 
-		url('/fonts/MyriadPro-Regular.otf') 
+		src:
+		url('/fonts/MyriadPro-Regular.otf')
 		format('opentype');
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: 'Myriad Pro';
-	src: 
-		url('/fonts/MyriadPro-Bold.otf') 
+	src:
+		url('/fonts/MyriadPro-Bold.otf')
 		format('opentype');
 	font-weight: 500;
 }
@@ -17,6 +17,30 @@
 html, body {
 	overflow-x: hidden;
 	max-width: 100vw;
+}
+
+.dropdown{
+
+}
+
+input[placeholder], input{
+	color: white;
+	font-size: 20px;
+}
+
+input[type=text], input[type=email]{
+	width: 100%;
+	align-content: center;
+	align-items: center;
+	border: none;
+	border-bottom: 4px solid white;
+	background:none !important;
+	padding: 2%;
+	opacity: 0.25;
+}
+
+form{
+	margin: 0 auto;
 }
 
 .navbar {
@@ -314,10 +338,25 @@ html, body {
 }
 */
 
+#jumbotron-apply{
+	background:
+	linear-gradient(
+			rgba(0, 0, 0, 0.45),
+			rgba(0, 0, 0, 0.45)
+		),
+		url('/img/contact/apply-bg.jpg');
+	background-size: cover;
+	background-position: center 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 #jumbotron-home {
 	background-image: url('/img/home1.png');
 	background-size: cover;
-	min-height: 100vh;
+	min-height: 80vh;
 	padding-top: 50px;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -336,6 +375,10 @@ html, body {
 	background-position: center 45%;
 	min-height: 100vh;
 	padding-top: 50px;
+}
+
+#jumbotron-members{
+	background-image: urls
 }
 
 #darken-overlay {
@@ -384,7 +427,7 @@ html, body {
 	padding-top: 40px;
 }
 
-#know h1, #partner h1 {
+#know h1, #partner h1{
 	text-align: center;
 	font-size: 650%;
 	padding-top: 9%;
@@ -564,7 +607,7 @@ html, body {
 	color: black !important	;
 }
 
-#know button, #partner button, #success button, #stories button {
+#know button, #partner button, #success button, #stories button{
 	background-color: transparent;
 	border: solid;
 	border-radius: 36px;
@@ -572,6 +615,21 @@ html, body {
 	color: black;
 	padding-right: 3%;
 	padding-left: 3%;
+	padding-top: -100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#app-process button{
+	background-color: transparent;
+	border: solid;
+	border-radius: 36px;
+	border-width: thin;
+	color: white;
+	padding-right: 10%;
+	padding-left: 10%;
 	padding-top: -100px;
 	text-align: center;
 	text-decoration: none;
@@ -638,7 +696,7 @@ html, body {
 	margin-left: -3%;
 	margin-top: -15%;
 	margin-bottom: -10%;
-	padding-top: 50px;	
+	padding-top: 50px;
 }
 
 .btn-jumbotron {
@@ -733,7 +791,7 @@ p {
 }
 
 .page-section.page-section-colored.page-section-green {
-	background-color: #82CA9C;
+	background-color: #343434;
 }
 
 .page-section.page-section-colored.page-section-yellow {
@@ -763,7 +821,7 @@ p {
 .page-section.page-section-colored.page-section-green h2, .page-section.page-section-colored.page-section-orange h2, .page-section.page-section-colored.page-section-green p, .page-section.page-section-colored.page-section-orange p, .page-section.page-section-colored.page-section-green h3, .page-section.page-section-colored.page-section-orange h3 {
 	color: white;
 }
-	
+
 .page-section.page-section-colored.page-section-blue {
 	background-color: #D0DEEA;
 }
@@ -870,7 +928,7 @@ p {
 	width: 200px;
 	margin-left: auto;
 	padding-bottom: 25px;
-	background-color: 
+	background-color:
 }
 
 .dropdown-orange>.toggle-main,.dropdown-orange>.toggle-dropdown {
@@ -1089,7 +1147,7 @@ p {
 	display: inline;
 	vertical-align: bottom;
 	height: 100%;
-	
+
 }
 /*}*/
 
@@ -1135,13 +1193,13 @@ p {
 @media (max-width: 1199px) {
 .footer>.row:first-of-type h5 {
 	margin-right: 15px;
-}	
+}
 }
 
 @media (max-width: 767px) {
 .footer>.row:first-of-type h5 {
 	margin-top: 170px;
-}	
+}
 }
 
 .footer>.row:last-of-type h6 {
@@ -1302,7 +1360,7 @@ p {
 @media (max-width: 768px) {
 	#departments-names>div {
 		max-width: 280px;
-		 margin: auto; 
+		 margin: auto;
 		margin-left: auto;
 		margin-right: auto;
 		float: none;
@@ -1457,7 +1515,7 @@ img.img-responsive.img-logo {
 #app-process>div>h1 {
 	text-align: center;
 	font-size: 130px;
-	margin-top: 0;
+	margin-top: 0;app-pr
 }
 
 #app-process>div>h3 {
@@ -1466,10 +1524,9 @@ img.img-responsive.img-logo {
 	margin-top: 0;
 }
 
-#app-process>div>h3>small {
+#app-process>div>h3>button>small {
 	text-align: center;
 	color: white;
-	font-weight: bold;
 }
 
 #app-process>div>p {
@@ -1552,7 +1609,7 @@ margin-right: 3px;
 }
 
 ol.carousel-green li {
- border: 1px solid #82CA9C; 
+ border: 1px solid #82CA9C;
 }
 
 ol.carousel-green li.active {
@@ -1651,5 +1708,5 @@ ol.carousel-green li.active {
     width: 100vw;
     height: 85vw;
   }
-  
+
 }
