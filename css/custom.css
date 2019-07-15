@@ -56,6 +56,10 @@ button[type=submit]:hover{
 	padding: 2%
 }
 
+#real_space_pls{
+	margin-top: 8%
+}
+
 
 input[type=text], input[type=email], select, input[type=date]{
 	width: 100%;
@@ -83,6 +87,13 @@ form{
 	font-weight: bold;
   color: white;
 	font-size: 620%;
+}
+
+.members h1{
+	text-align: center;
+  margin-top: 5%;
+  color: #f15e27 !important;
+	font-size: 620% !important;
 }
 
 .navbar {
@@ -388,6 +399,17 @@ form{
 }
 }
 */
+
+#jumbotron-members{
+	background:
+	linear-gradient(
+			rgba(0, 0, 0, 0.45),
+			rgba(0, 0, 0, 0.45)
+		),
+		url('/img/members/members-header.jpg');
+		background-size: cover;
+		min-height: 80vh;
+}
 
 #jumbotron-apply{
 	background:
