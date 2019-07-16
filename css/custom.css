@@ -62,12 +62,20 @@ button[type=submit]:hover{
 	text-align: center;
 }
 
+.centerpls{
+	text-align: center;
+}
+
 #space_pls{
 	padding: 2%
 }
 
+#kinda_small_real_space_pls{
+	margin-top: 4%
+}
+
 #real_space_pls{
-	margin-top: 6%
+	margin-top: 8%
 }
 
 input[type=file]{
