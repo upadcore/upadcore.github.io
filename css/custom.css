@@ -411,6 +411,11 @@ form{
 	padding-top: 2%;
 }
 
+.img-responsive.img-logo {
+	max-width: 150px;
+	margin: auto;
+}
+
 .new-navbar-brand {
 	color: white !important;
 	text-decoration: none !important;
@@ -436,6 +441,86 @@ form{
 }
 }
 
+@media (min-width: 620px) and (max-width: 1410px) {
+.new-navbar-brand {
+	color: white !important;
+	text-decoration: none !important;
+	font-size: 110%; 
+}
+}
+
+@media (min-width: 920px) and (max-width: 1410px) {
+.img-responsive.img-logo {
+	max-width: 90px;
+	margin: auto;
+}
+
+.row.row-main.header {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+}
+
+@media (min-width: 620px) and (max-width: 920px) {
+.img-responsive.img-logo {
+	max-width: 90px;
+	margin: auto;
+}
+
+.row.row-main.header {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+}
+
+@media (min-width: 450px) and (max-width: 620px) {
+.new-navbar-brand {
+	color: white !important;
+	text-decoration: none !important;
+	font-size: 90%;
+	text-align: center;
+}
+
+.img-responsive.img-logo {
+	max-width: 80px;
+	margin: auto;
+}
+
+.row.row-main.header {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+}
+
+@media (min-width: 0px) and (max-width: 450px) {
+.new-navbar-brand {
+	color: white !important;
+	text-decoration: none !important;
+	font-size: 75%;
+	text-align: center;
+}
+
+.img-responsive.img-logo {
+	max-width: 60px;
+	margin: auto;
+}
+
+.row.row-main.header {
+	padding-left: 2%;
+	padding-right: 0%;
+}
+
+#jumbotron-home {
+	background-image: url('/img/home12.png');
+	background-size: cover;
+	background-position: center 45%;
+	min-height: 65vh !important;
+	padding-top: 15px !important;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+}
+
+
 /*
 @media (min-width: 768px) and (max-width: 991px) {
 .col-sm-12.col-sm-12-main {
@@ -445,6 +530,15 @@ form{
 }
 }
 */
+
+#jumbotron-home {
+	background-image: url('/img/home12.png');
+	background-size: cover;
+	background-position: center 45%;
+	min-height: 100vh;
+	padding-top: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
 #jumbotron-members{
 	background:
@@ -491,14 +585,6 @@ form{
 	background-color: rgba(0, 0, 0, 0.5);
 	padding-top: 50px;
 
-}
-
-#jumbotron-home {
-	background-image: url('/img/home1.png');
-	background-size: cover;
-	min-height: 80vh;
-	padding-top: 50px;
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 #jumbotron-about {
@@ -925,11 +1011,6 @@ form{
 
 .btn.btn-sm.btn-jumbotron {
 	padding: 2px 6px;
-}
-
-.img-responsive.img-logo {
-	max-width: 150px;
-	margin: auto;
 }
 
 @media (min-width: 768px) {
