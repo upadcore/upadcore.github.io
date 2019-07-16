@@ -54,7 +54,8 @@ button[type=submit]:hover{
 .matrix-size{
 	margin-left: auto;
 	 margin-right: auto;
-	 width: calc(17em + 55vw);
+	 max-width: 950px;
+	 width: calc(17em + 45vw);
 }
 
 #centerpls{
@@ -66,7 +67,7 @@ button[type=submit]:hover{
 }
 
 #real_space_pls{
-	margin-top: 8%
+	margin-top: 6%
 }
 
 input[type=file]{
@@ -635,11 +636,13 @@ form{
 	margin-right: auto;
 }
 
-.members{
+.matrix{
 	text-align: center;
+	background: #ECECEC;
+	padding-top: 1.5%;
 }
 
-#members-list h1{
+#matrix-list h1{
 	font-size: 3em !important;
 	color: grey !important;
 }
