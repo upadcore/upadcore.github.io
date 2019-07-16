@@ -58,6 +58,12 @@ button[type=submit]:hover{
 	 width: calc(17em + 45vw);
 }
 
+.member-exec-size{
+	margin-left: auto;
+	 margin-right: auto;
+	 width: 800px;
+}
+
 #centerpls{
 	text-align: center;
 }
@@ -66,16 +72,40 @@ button[type=submit]:hover{
 	text-align: center;
 }
 
+#tiny_space_pls{
+	padding: 1%
+}
+
 #space_pls{
 	padding: 2%
 }
 
-#kinda_small_real_space_pls{
+#double_space_pls{
+	padding: 4%
+}
+
+#for_real_space_pls{
 	margin-top: 4%
+}
+
+#some_real_space_pls{
+	margin-top: 6%
 }
 
 #real_space_pls{
 	margin-top: 8%
+}
+
+#dark_text_bigger{
+	color: #707070;
+	font-size: 22px;
+	text-align: center;
+}
+
+#dark_text{
+	color: #707070;
+	font-size: 18px;
+	text-align: center;
 }
 
 input[type=file]{
@@ -155,6 +185,13 @@ form{
   margin-top: 5%;
   color: #f15e27 !important;
 	font-size: 620% !important;
+}
+
+#member-icon{
+	width:220px;
+	height:220px;
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 .navbar {
