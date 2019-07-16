@@ -236,11 +236,27 @@ $('.button-more').click(function(event){
       $("label#" + $(this).attr('id')).css("margin-left", "35%");
       $("label#" + $(this).attr('id')).css("font-size", "15px");
     });
-
     $('input').on('keypress', function(e) {
         e.which !== 12 || $('[tabIndex=' + (+this.tabIndex + 1) + ']')[0].focus();
     });
+    $('input').focus(function () {
+             var center = $(window).height() / 2;
+             var top = $(this).offset().top;
+             $('html, body').animate({ scrollTop: top - center }, 'normal');
 
+     });
+     $('textarea').focus(function () {
+              var center = $(window).height() / 2;
+              var top = $(this).offset().top;
+              $('html, body').animate({ scrollTop: top - center }, 'normal');
+
+      });
+      $('select').focus(function () {
+               var center = $(window).height() / 2;
+               var top = $(this).offset().top;
+               $('html, body').animate({ scrollTop: top - center }, 'normal');
+
+     });
     function popUP(){
       alert("YAY");
     }
