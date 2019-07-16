@@ -475,7 +475,7 @@ form{
 #jumbotron-home {
 	background-image: url('/img/home1.png');
 	background-size: cover;
-	min-height: 100vh;
+	min-height: 80vh;
 	padding-top: 50px;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -602,14 +602,30 @@ form{
 	padding-bottom: 3%;
 }
 
-#success h3 {
+#success h3, #apply h3 {
 	text-align: center;
 }
 
-#success button {
+#success button, #apply button {
 	font-size: 100%;
 	text-align: center;
 	color: white !important;
+}
+
+#not_button button{
+	background-color: transparent;
+	border: solid;
+	border-radius: 36px;
+	border-width: thin;
+	color: white;
+	padding-right: 2%;
+	padding-left: 2%;
+	font-size: 100%;
+	text-align: center;
+}
+
+.middle_pls{
+	margin: 0 auto;
 }
 
 .stories-card, #contact-card {
@@ -761,7 +777,7 @@ form{
 	color: black !important	;
 }
 
-#know button, #partner button, #success button, #stories button {
+#know button, #partner button, #success button, #stories button, #apply button{
 	background-color: transparent;
 	border: solid;
 	border-radius: 36px;
@@ -769,6 +785,21 @@ form{
 	color: black;
 	padding-right: 3%;
 	padding-left: 3%;
+	padding-top: -100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#app-process button{
+	background-color: transparent;
+	border: solid;
+	border-radius: 36px;
+	border-width: thin;
+	color: white;
+	padding-right: 10%;
+	padding-left: 10%;
 	padding-top: -100px;
 	text-align: center;
 	text-decoration: none;
@@ -936,7 +967,7 @@ p {
 }
 
 .page-section.page-section-colored.page-section-green {
-	background-color: #82CA9C;
+	background-color: #343434;
 }
 
 .page-section.page-section-colored.page-section-yellow {
@@ -1684,7 +1715,7 @@ img.img-responsive.img-logo {
 #app-process>div>h1 {
 	text-align: center;
 	font-size: 130px;
-	margin-top: 0;
+	margin-top: 0;app-pr
 }
 
 #app-process>div>h3 {
@@ -1693,10 +1724,9 @@ img.img-responsive.img-logo {
 	margin-top: 0;
 }
 
-#app-process>div>h3>small {
+#app-process>div>h3>button>small {
 	text-align: center;
 	color: white;
-	font-weight: bold;
 }
 
 #app-process>div>p {
