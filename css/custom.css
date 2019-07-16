@@ -112,13 +112,25 @@ label{
 form{
 }
 
-.header_text{
+.header_text_form{
 	text-align: center;
   margin-top: 5%;
-	font-weight: bold;
   color: white;
 	font-size: 620%;
+	font-weight: bold;
 }
+
+.header_text{
+	font-size: calc(4em + 3vw);
+	font-size-adjust: auto;
+	text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 
 .members h1{
 	text-align: center;
@@ -434,19 +446,21 @@ form{
 #jumbotron-members{
 	background:
 	linear-gradient(
-			rgba(0, 0, 0, 0.45),
-			rgba(0, 0, 0, 0.45)
+			rgba(0, 0, 0, 0.65),
+			rgba(0, 0, 0, 0.65)
 		),
 		url('/img/members/members-header.jpg');
 		background-size: cover;
-		min-height: 80vh;
+		min-height: 100vh;
+		padding-top: 50px;
+
 }
 
 #jumbotron-client{
 	background:
 	linear-gradient(
-			rgba(0, 0, 0, 0.55),
-			rgba(0, 0, 0, 0.55)
+			rgba(0, 0, 0, 0.60),
+			rgba(0, 0, 0, 0.60)
 		),
 		url('/img/contact/client-bg.jpg');
 	background-size: cover;
@@ -455,13 +469,15 @@ form{
 	background-attachment: fixed;
 	height: auto;
 	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 50px;
+
 }
 
 #jumbotron-apply{
 	background:
 	linear-gradient(
-			rgba(0, 0, 0, 0.55),
-			rgba(0, 0, 0, 0.55)
+			rgba(0, 0, 0, 0.65),
+			rgba(0, 0, 0, 0.65)
 		),
 		url('/img/contact/apply-bg.jpg');
 	background-size: cover;
@@ -470,6 +486,8 @@ form{
 	background-attachment: fixed;
 	height: auto;
 	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 50px;
+
 }
 
 #jumbotron-home {
@@ -604,6 +622,7 @@ form{
 
 #success h3, #apply h3 {
 	text-align: center;
+	font-weight: normal !important;
 }
 
 #success button, #apply button {
