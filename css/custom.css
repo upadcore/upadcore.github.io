@@ -29,7 +29,7 @@ html, body {
 	margin-left: 30%;
 }
 
-input[placeholder], input{
+input[placeholder], input, textarea{
 	color: white;
 	font-size: 20px;
 }
@@ -72,8 +72,10 @@ input[type=file]{
 }
 
 
-input[type=text], input[type=email], select, input[type=date]{
-	width: 100%;
+input[type=text], input[type=email], select, input[type=date], textarea{
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
 	align-items: center;
 	border: none;
 	border-bottom: 6px solid white;
@@ -425,11 +427,26 @@ form{
 		min-height: 80vh;
 }
 
+#jumbotron-client{
+	background:
+	linear-gradient(
+			rgba(0, 0, 0, 0.55),
+			rgba(0, 0, 0, 0.55)
+		),
+		url('/img/contact/client-bg.jpg');
+	background-size: cover;
+	background-position: center 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 #jumbotron-apply{
 	background:
 	linear-gradient(
-			rgba(0, 0, 0, 0.45),
-			rgba(0, 0, 0, 0.45)
+			rgba(0, 0, 0, 0.55),
+			rgba(0, 0, 0, 0.55)
 		),
 		url('/img/contact/apply-bg.jpg');
 	background-size: cover;
