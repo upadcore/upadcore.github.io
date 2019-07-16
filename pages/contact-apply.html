@@ -47,21 +47,22 @@ layout: default
     <script type="text/javascript">var submitted=false;</script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
     onload="if(submitted) {window.location='/contact.html';}"></iframe>
+
     <form id="plswork" action="https://docs.google.com/forms/d/e/1FAIpQLScYdLYq2_N7-H5pcb4y3xh3f-xfTxsGh3uLf3QthigvAAt22A/formResponse" method="post" style="position:relative" target="hidden_iframe" onsubmit="submitted=true;">
       <div id="space_pls"></div>
-      <input type="text" name="entry.1602290746" placeholder="DELA CRUZ, Juan P." id="last-name">
-      <br><label id="last-name">FULL NAME</label><br>
+      <input  id="name"type="text" name="entry.1602290746" placeholder="DELA CRUZ, Juan P.">
+      <br><label id="name">FULL NAME</label><br>
 
       <div id="space_pls"></div>
-      <input type="text" placeholder="What do you want us to call you?" name="entry.1602290746" >
-      <br><label>NICKNAME</label><br>
+      <input id="nickname" type="text" placeholder="What do you want us to call you?" name="entry.1602290746" >
+      <br><label id="nickname">NICKNAME</label><br>
 
       <div id="space_pls"></div>
-      <input type="text" placeholder="ex. 2001-23456" name="entry.1602290746" >
-      <br><label>STUDENT NUMBER</label>
+      <input id="student-no" type="text" placeholder="ex. 2001-23456" name="entry.1602290746" >
+      <br><label id="student-no">STUDENT NUMBER</label>
 
       <div id="space_pls"></div>
-      <select class="select-css" name="entry.1555017892">
+      <select id="college" class="select-css" name="entry.1555017892">
         <option value="Archaeological Studies Program">Archaeological Studies Program</option>
         <option value="Asian Center">Asian Center</option>
         <option value="Asian Institute of Tourism">Asian Institute of Tourism</option>
@@ -88,41 +89,40 @@ layout: default
         <option value="School of Urban and Regional Planning">School of Urban and Regional Planning</option>
         <option value="Technology Management Center">Technology Management Center</option>
       </select>
-      <label>COLLEGE</label><br>
+      <label id="college">COLLEGE</label><br>
 
       <div id="space_pls"></div>
-      <input type="text" placeholder="ex. 2001-23456" name="entry.1602290746" >
-      <br><label>DEGREE PROGRAM</label>
+      <input id="program" type="text" placeholder="ex. BS Business Administration" name="entry.1602290746" >
+      <br><label id="program">DEGREE PROGRAM</label>
 
       <div id="space_pls"></div>
-      <input type="date" placeholder="ex. 2001-23456" name="entry.1602290746" >
-      <br><label>BIRTHDAY</label>
+      <input id="birthday" type="date" placeholder="ex. 2001-23456" name="entry.1602290746" >
+      <br><label id="birthday">BIRTHDAY</label>
 
       <div id="space_pls"></div>
-      <select class="select-css" name="entry.1602290746">
-      <option value="Globe">Globe</option>
-      <option value="Smart">Smart</option>
-      <option value="ABS-CBN">ABS-CBN</option>
-      <option value="TM">TM</option>
+      <select id="networks" class="select-css" name="entry.1602290746">
+      <option value="Globe/TM">Globe</option>
+      <option value="Smart/TNT">Smart</option>
       <option value="Sun">Sun</option>
+      <option value="ABS-CBN">ABS-CBN</option>
       <select>
-      <br><label>NETWORK PROVIDER</label>
+      <br><label id="networks">NETWORK PROVIDER</label>
 
       <div id="space_pls"></div>
-      <input type="text" name="emailAddress" >
-      <br><label>Mobile Number</label><br>
+      <input id="mobile-no" type="text" name="emailAddress" >
+      <br><label id="mobile-no">Mobile Number</label><br>
 
       <div id="space_pls"></div>
-      <input type="email" name="emailAddress">
-      <br><label>Email address</label><br>
+      <input id="email" type="email" name="emailAddress">
+      <br><label id="email">Email address</label><br>
 
       <div id="space_pls"></div>
-      <input type="text" name="emailAddress" >
-      <br><label>Facebook URL</label><br>
+      <input id="fb-url"type="text" name="emailAddress" >
+      <br><label id="fb-url">Facebook URL</label><br>
 
       <div id="space_pls"></div>
-      <input type="text" name="emailAddress" >
-      <br><label>Link to Form 5 / ID</label><br>
+      <input id="form5" type="text" name="emailAddress" >
+      <br><label id="form5">Link to Form 5 / ID</label><br>
 
       <div id="space_pls"></div>
       <div id="space_pls"></div>
@@ -210,38 +210,38 @@ $('.button-more').click(function(event){
 <script>
   //FORM SCRIPT
   $(document).ready(function(){
-    $("input").css("width", "40%");
-    $("input").css("margin-left", "30%")
-    $("input").css("margin-right", "30%")
-
     $("input").focus(function(){
-      $(this).css("width", "80%");
-      $(this).css("opacity", "1.0");
-      $(this).css("left", "-10%")
-      $(this).css("margin-left", "10%")
-      $(this).css("margin-right", "10%")
-      $('label[for="'+ $this.attr('id') +'"]').css("margin-left", "20%");
+      $("label#" + $(this).attr('id')).css("opacity", "1.0");
+      $("label#" + $(this).attr('id')).css("margin-left", "15%");
+      $("label#" + $(this).attr('id')).css("font-size", "20px");
+
     });
     $("input").blur(function(){
-      $(this).css("width", "40%");
-      $(this).css("opacity", "0.55");
-      $(this).css("margin-left", "30%")
-      $(this).css("margin-right", "30%")
+      $("label#" + $(this).attr('id')).css("opacity", "0.55");
+      $("label#" + $(this).attr('id')).css("margin-left", "35%");
+      $("label#" + $(this).attr('id')).css("font-size", "15px");
     });
 
     $("select").focus(function(){
-      $(this).css("width", "80%");
-      $(this).css("opacity", "1.0");
-      $(this).css("left", "-10%")
-      $(this).css("margin-left", "10%")
-      $(this).css("margin-right", "10%")
-      $('label[for="'+ $this.attr('id') +'"]').css("margin-left", "20%");
+      $("label#" + $(this).attr('id')).css("opacity", "1.0");
+      $("label#" + $(this).attr('id')).css("margin-left", "15%");
+      $("label#" + $(this).attr('id')).css("font-size", "20px");
     });
     $("select").blur(function(){
-      $(this).css("width", "40%");
-      $(this).css("opacity", "0.55");
-      $(this).css("margin-left", "30%")
-      $(this).css("margin-right", "30%")
+      $("label#" + $(this).attr('id')).css("opacity", "0.55");
+      $("label#" + $(this).attr('id')).css("margin-left", "35%");
+      $("label#" + $(this).attr('id')).css("font-size", "15px");
+    });
+
+    $("textarea").focus(function(){
+      $("label#" + $(this).attr('id')).css("opacity", "1.0");
+      $("label#" + $(this).attr('id')).css("margin-left", "15%");
+      $("label#" + $(this).attr('id')).css("font-size", "20px");
+    });
+    $("textarea").blur(function(){
+      $("label#" + $(this).attr('id')).css("opacity", "0.55");
+      $("label#" + $(this).attr('id')).css("margin-left", "35%");
+      $("label#" + $(this).attr('id')).css("font-size", "15px");
     });
 
     $('input').on('keypress', function(e) {

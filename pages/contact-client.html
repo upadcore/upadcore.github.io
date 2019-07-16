@@ -47,87 +47,46 @@ layout: default
     <script type="text/javascript">var submitted=false;</script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
     onload="if(submitted) {window.location='/contact.html';}"></iframe>
+
     <form id="plswork" action="https://docs.google.com/forms/d/e/1FAIpQLScYdLYq2_N7-H5pcb4y3xh3f-xfTxsGh3uLf3QthigvAAt22A/formResponse" method="post" style="position:relative" target="hidden_iframe" onsubmit="submitted=true;">
-      <div id="space_pls"></div>
-      <input type="text" placeholder="UP Adcore" name="entry.1602290746" id="last-name">
-      <br><label id="last-name">Company Name</label><br>
 
       <div id="space_pls"></div>
-      <textarea placeholder="The UP Advertising Core (UP AdCore) is the only student-run, not-for-profit organization and student advertising agency based in the Cesar E.A. Virata School of Business (VSB) of the University of the Philippines, Diliman (UP Diliman)."
+      <input id="company-name"type="text" placeholder="UP Adcore" name="entry.1602290746" id="last-name">
+      <br><label id="company-name">Company Name</label><br>
+
+      <div id="space_pls"></div>
+      <textarea id="about-company" placeholder="The UP Advertising Core (UP AdCore) is the only student-run, not-for-profit organization and student advertising agency based in the Cesar E.A. Virata School of Business (VSB) of the University of the Philippines, Diliman (UP Diliman)."
       name="entry.1602290746" ></textarea>
-      <br><label>About the Company</label><br>
+      <br><label id="about-company">About the Company</label><br>
 
       <div id="space_pls"></div>
-      <input type="text" placeholder="Josh Ambrosio" name="entry.1602290746" >
-      <br><label>Name of Client Representative</label>
+      <input id="client-name"type="text" placeholder="Josh Ambrosio" name="entry.1602290746" >
+      <br><label id="client-name">Name of Client Representative</label>
 
       <div id="space_pls"></div>
-      <input type="text" placeholder="President" name="entry.1602290746" >
-      <br><label>Position of Client Representative</label>
+      <input id="client-position"type="text" placeholder="President" name="entry.1602290746" >
+      <br><label id="client-position">Position of Client Representative</label>
 
       <div id="space_pls"></div>
-      <select class="select-css" name="entry.1555017892">
-        <option value="Archaeological Studies Program">Archaeological Studies Program</option>
-        <option value="Asian Center">Asian Center</option>
-        <option value="Asian Institute of Tourism">Asian Institute of Tourism</option>
-        <option value="Cesar E.A. Virata School of Business">Cesar E.A. Virata School of Business</option>
-        <option value="College of Architecture">College of Architecture</option>
-        <option value="College of Arts and Letters">College of Arts and Letters</option>
-        <option value="College of Education">College of Education</option>
-        <option value="College of Engineering">College of Engineering</option>
-        <option value="College of Fine Arts">College of Fine Arts</option>
-        <option value="College of Home Economics">College of Home Economics</option>
-        <option value="College of Human Kinetics">College of Human Kinetics</option>
-        <option value="College of Law">College of Law</option>
-        <option value="College of Mass Communication">College of Mass Communication</option>
-        <option value="College of Music">College of Music</option>
-        <option value="College of Science">College of Science</option>
-        <option value="College of Social Scicences and Philosophy">College of Social Scicences and Philosophy</option>
-        <option value="College of Social Work and Community Development">College of Social Work and Community Development</option>
-        <option value="Institute of Islamic Studies">Institute of Islamic Studies</option>
-        <option value="National College of Public Administration and Governance">National College of Public Administration and Governance</option>
-        <option value="School of Economics">School of Economics</option>
-        <option value="School of Labor and Industrial Relations">School of Labor and Industrial Relations</option>
-        <option value="School of Library and Informaiton Studies">School of Library and Informaiton Studies</option>
-        <option value="School of Statistics">School of Statistics</option>
-        <option value="School of Urban and Regional Planning">School of Urban and Regional Planning</option>
-        <option value="Technology Management Center">Technology Management Center</option>
-      </select>
-      <label>COLLEGE</label><br>
+      <input id="project-description"type="text" placeholder="President" name="entry.1602290746" >
+      <br><label id="project-description">Brief description of the project</label>
 
       <div id="space_pls"></div>
-      <input type="text" placeholder="ex. 2001-23456" name="entry.1602290746" >
-      <br><label>DEGREE PROGRAM</label>
-
-      <div id="space_pls"></div>
-      <input type="date" placeholder="ex. 2001-23456" name="entry.1602290746" >
-      <br><label>BIRTHDAY</label>
-
-      <div id="space_pls"></div>
-      <select class="select-css" name="entry.1602290746">
-      <option value="Globe">Globe</option>
-      <option value="Smart">Smart</option>
-      <option value="ABS-CBN">ABS-CBN</option>
-      <option value="TM">TM</option>
+      <select id="networks" class="select-css" name="entry.1602290746">
+      <option value="Globe/TM">Globe</option>
+      <option value="Smart/TNT">Smart</option>
       <option value="Sun">Sun</option>
+      <option value="ABS-CBN">ABS-CBN</option>
       <select>
-      <br><label>NETWORK PROVIDER</label>
+      <br><label id="networks">NETWORK PROVIDER</label>
 
       <div id="space_pls"></div>
-      <input type="text" name="emailAddress" >
-      <br><label>Mobile Number</label><br>
+      <input id="mobile-number" type="text" name="emailAddress" >
+      <br><label id="mobile-number">Primary Mobile Number</label><br>
 
       <div id="space_pls"></div>
-      <input type="email" name="emailAddress">
-      <br><label>Email address</label><br>
-
-      <div id="space_pls"></div>
-      <input type="text" name="emailAddress" >
-      <br><label>Facebook URL</label><br>
-
-      <div id="space_pls"></div>
-      <input type="text" name="emailAddress" >
-      <br><label>Link to Form 5 / ID</label><br>
+      <input id="email-address" type="email" name="emailAddress">
+      <br><label id="email-address">Primary Email address</label><br>
 
       <div id="space_pls"></div>
       <div id="space_pls"></div>
@@ -190,7 +149,7 @@ $(document).on('click', function(event) {
     $('.button-more#button-more-1').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
   }
   if ((!$(event.target).closest('.button-more#button-more-2').length)) {
-    $('.button-more#button-more-2').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
+    $('.button-more#button-more-2').parent().nelast-namext().removeClass('toggle-dropdown-active toggle-dropdown-visible');
   }
 });
 </script>
@@ -219,46 +178,62 @@ $('.button-more').click(function(event){
     $("input").focus(function(){
       $(this).css("width", "80%");
       $(this).css("opacity", "1.0");
-      $(this).css("left", "-10%")
-      $(this).css("margin-left", "10%")
-      $(this).css("margin-right", "10%")
-      $('label[for="'+ $this.attr('id') +'"]').css("margin-left", "20%");
+      $(this).css("left", "-10%");
+      $(this).css("margin-left", "10%");
+      $(this).css("margin-right", "10%");
+      $("label#" + $(this).attr('id')).css("opacity", "1.0");
+      $("label#" + $(this).attr('id')).css("margin-left", "15%");
+      $("label#" + $(this).attr('id')).css("font-size", "20px");
+
     });
     $("input").blur(function(){
       $(this).css("width", "40%");
       $(this).css("opacity", "0.55");
-      $(this).css("margin-left", "30%")
-      $(this).css("margin-right", "30%")
+      $(this).css("margin-left", "30%");
+      $(this).css("margin-right", "30%");
+      $("label#" + $(this).attr('id')).css("opacity", "0.55");
+      $("label#" + $(this).attr('id')).css("margin-left", "35%");
+      $("label#" + $(this).attr('id')).css("font-size", "15px");
     });
 
     $("select").focus(function(){
       $(this).css("width", "80%");
       $(this).css("opacity", "1.0");
-      $(this).css("left", "-10%")
-      $(this).css("margin-left", "10%")
-      $(this).css("margin-right", "10%")
-      $('label[for="'+ $this.attr('id') +'"]').css("margin-left", "20%");
+      $(this).css("left", "-10%");
+      $(this).css("margin-left", "10%");
+      $(this).css("margin-right", "10%");
+      $("label#" + $(this).attr('id')).css("opacity", "1.0");
+      $("label#" + $(this).attr('id')).css("margin-left", "15%");
+      $("label#" + $(this).attr('id')).css("font-size", "20px");
     });
     $("select").blur(function(){
       $(this).css("width", "40%");
       $(this).css("opacity", "0.55");
-      $(this).css("margin-left", "30%")
-      $(this).css("margin-right", "30%")
+      $(this).css("margin-left", "30%");
+      $(this).css("margin-right", "30%");
+      $("label#" + $(this).attr('id')).css("opacity", "0.55");
+      $("label#" + $(this).attr('id')).css("margin-left", "35%");
+      $("label#" + $(this).attr('id')).css("font-size", "15px");
     });
 
     $("textarea").focus(function(){
       $(this).css("width", "80%");
       $(this).css("opacity", "1.0");
-      $(this).css("left", "-10%")
-      $(this).css("margin-left", "10%")
-      $(this).css("margin-right", "10%")
-      $('label[for="'+ $this.attr('id') +'"]').css("margin-left", "20%");
+      $(this).css("left", "-10%");
+      $(this).css("margin-left", "10%");
+      $(this).css("margin-right", "10%");
+      $("label#" + $(this).attr('id')).css("opacity", "1.0");
+      $("label#" + $(this).attr('id')).css("margin-left", "15%");
+      $("label#" + $(this).attr('id')).css("font-size", "20px");
     });
     $("textarea").blur(function(){
       $(this).css("width", "40%");
       $(this).css("opacity", "0.55");
-      $(this).css("margin-left", "30%")
-      $(this).css("margin-right", "30%")
+      $(this).css("margin-left", "30%");
+      $(this).css("margin-right", "30%");
+      $("label#" + $(this).attr('id')).css("opacity", "0.55");
+      $("label#" + $(this).attr('id')).css("margin-left", "35%");
+      $("label#" + $(this).attr('id')).css("font-size", "15px");
     });
 
     $('input').on('keypress', function(e) {
