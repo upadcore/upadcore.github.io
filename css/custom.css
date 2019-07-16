@@ -108,6 +108,10 @@ button[type=submit]:hover{
 	text-align: center;
 }
 
+#do-not-center{
+	text-align: justify!important;
+}
+
 input[type=file]{
 	width: 100%;
 	align-items: center;
