@@ -51,7 +51,13 @@ button[type=submit]:hover{
 	opacity: 1.0;
 }
 
-.centerpls{
+.matrix-size{
+	margin-left: auto;
+	 margin-right: auto;
+	 width: calc(17em + 55vw);
+}
+
+#centerpls{
 	text-align: center;
 }
 
@@ -629,6 +635,59 @@ form{
 	margin-right: auto;
 }
 
+.members{
+	text-align: center;
+}
+
+#members-list h1{
+	font-size: 3em !important;
+	color: grey !important;
+}
+
+.members-box{
+	border-radius: 2px;
+	text-align: center;
+	height: 55px;
+	width: 230px;
+	font-size: 20px;
+	font-weight:bold;
+	padding-top: 12px;
+	margin-top: 15px;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#single_giant_letters h1{
+	color: white !important;
+	font-size: 12em !important;
+}
+
+#orange_bandaid h1{
+	font-size: calc(5em + 1vw)!important;
+}
+
+#president{
+	background: #F15E27;
+	color:white;
+}
+
+#vp{
+	background: #F48020;
+	color:white;
+}
+
+#avp{
+	background: #FAAC1D;
+	color:white;
+}
+
+#manager{
+	background: #FFFFFF;
+	color:grey;
+}
+
 #success {
 	background-image: url('/img/about2.png');
 	background-size: cover;
@@ -709,7 +768,7 @@ form{
 	padding-bottom: 3%;
 }
 
-#success h3, #apply h3 {
+#success h3, #apply h3, #black_btn h3 {
 	text-align: center;
 	font-weight: normal !important;
 }
@@ -843,6 +902,16 @@ form{
 	background-color: #FD6A08;
 }
 
+#contact-button5 {
+	background-color: #ff5521;
+	width: 5vw;
+	min-width: 250px;
+	max-width: 500px;
+	min-height: 50px !important;
+	max-height: 50px;
+	border: none;
+}
+
 #stories-button {
 	font-size: 50%;
 	background-color: transparent;
@@ -885,7 +954,7 @@ form{
 	color: black !important	;
 }
 
-#know button, #partner button, #success button, #stories button, #apply button{
+#know button, #partner button, #success button, #stories button, #apply button, #black_btn button{
 	background-color: transparent;
 	border: solid;
 	border-radius: 36px;
@@ -1818,13 +1887,14 @@ img.img-responsive.img-logo {
 #app-process>div>h1 {
 	text-align: center;
 	font-size: 130px;
-	margin-top: 0;app-pr
+	margin-top: 0;
 }
 
 #app-process>div>h3 {
 	min-height: 53px;
 	text-align: center;
 	margin-top: 0;
+	font-size:30px;
 }
 
 #app-process>div>h3>button>small {
@@ -1834,7 +1904,7 @@ img.img-responsive.img-logo {
 
 #app-process>div>p {
 	margin-bottom: 0;
-	font-size: 12px;
+	font-size: 18px;
 }
 
 .img-award {
