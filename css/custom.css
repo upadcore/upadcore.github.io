@@ -107,6 +107,12 @@ button[type=submit]:hover{
 	 width:90%;
 }
 
+#matrix-text{
+	max-width: 1100px !important;
+	width: calc(17em + 52vw);
+	margin-left: -4vw;
+}
+
 #centerpls{
 	text-align: center;
 }
@@ -248,7 +254,7 @@ form{
 	height:220px;
 	border-radius: 50%;
 	object-fit: cover;
-	object-position: 0px 15%;
+	object-position: 0px 0%;
 }
 
 .navbar {
