@@ -19,6 +19,50 @@ html, body {
 	max-width: 100vw;
 }
 
+#ninetywidth{
+	width: 90%;
+	margin: 0px auto;
+}
+
+.wrapper-cirlce{
+	width:90%;
+	padding-top: 20px;
+	text-align:center;
+}
+
+.carousel-circle{
+  width:80%;
+  margin:0px auto;
+}
+
+.carousel-circle img{
+  margin:0px auto;
+}
+
+
+.slick-slide img{
+  width:100%;
+  border: 2px solid #fff;
+}
+
+.slick-track {
+    margin: 0px auto;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+/*  font-family: 'slick';
+  font-size: 50px;
+  line-height: 1;
+
+  opacity: .75;*/
+  color: black;
+/*
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;*/
+}
+
 .select-css{
 	background-color: transparent;
 	width:40%;
@@ -58,9 +102,9 @@ button[type=submit]:hover{
 }
 
 .member-exec-size{
-	margin-left: auto;
-	 margin-right: auto;
-	 width: 800px;
+	margin: 0px auto;
+	 max-width: 800px;
+	 width:90%;
 }
 
 #centerpls{
@@ -79,6 +123,11 @@ button[type=submit]:hover{
 	padding: 2%
 }
 
+#comm_space_pls{
+	padding-top: 3%
+}
+
+
 #double_space_pls{
 	padding: 4%
 }
@@ -93,6 +142,10 @@ button[type=submit]:hover{
 
 #real_space_pls{
 	margin-top: 8%
+}
+
+#sixteen_real_space_pls{
+	margin-top: 16%
 }
 
 #dark_text_bigger{
@@ -190,11 +243,12 @@ form{
 	font-size: 620% !important;
 }
 
-#member-icon{
+#member-icon img{
 	width:220px;
 	height:220px;
 	border-radius: 50%;
 	object-fit: cover;
+	object-position: 0px 15%;
 }
 
 .navbar {
