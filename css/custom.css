@@ -461,9 +461,16 @@ form{
 	margin-right: auto;
 }
 
-#design .column, #beforefooter .column {
+#design .column {
 	float: left;
 	width: 33.33%;
+}
+
+#beforefooter .column {
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	width: 31%;
 }
 
 #design .column img {
