@@ -470,9 +470,16 @@ form{
 	margin-right: auto;
 }
 
-#design .column, #beforefooter .column {
+#design .column {
 	float: left;
 	width: 33.33%;
+}
+
+#beforefooter .column {
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	width: 31%;
 }
 
 #design .column img {
@@ -841,7 +848,7 @@ form{
 }
 
 #stories {
-	margin-top: -25%;
+	margin-top: -45%;
 }
 
 #home-stories {
@@ -849,7 +856,7 @@ form{
 }
 
 #contact-us {
-	margin-top: -25%;
+	margin-top: -30%;
 	margin-bottom: -5%;
 }
 
@@ -1766,7 +1773,7 @@ p {
 }
 
 .footer>.row:last-of-type {
-	background-color: #F0932E;
+	background-color: #F79F45;
 }
 
 .footer ul {
