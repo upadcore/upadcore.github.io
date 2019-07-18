@@ -111,6 +111,7 @@ button[type=submit]:hover{
 	max-width: 1100px !important;
 	width: calc(17em + 52vw);
 	margin-left: -4vw;
+	padding-bottom: 15vh;
 }
 
 #centerpls{
@@ -121,8 +122,16 @@ button[type=submit]:hover{
 	text-align: center;
 }
 
+#plscenter{
+	margin: 0px auto !important;
+}
+
 #tiny_space_pls{
 	padding: 1%
+}
+
+.space_pls{
+	padding-top: 2%;
 }
 
 #space_pls{
@@ -195,7 +204,7 @@ input[type=text], input[type=email], select, input[type=date], textarea{
 	opacity: 0.45;
 	font-size: 20px;
 	-webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
 	transition: margin 0.2s ease;
 }
 
@@ -744,6 +753,23 @@ form{
 	margin-right: auto;
 }
 
+#members-carousel-picker{
+	background: #ECECEC ;
+	margin-top: -2vh;
+}
+
+#members-carousel-reduce{
+	margin-top -2vh;
+}
+
+.not-white-bandaid{
+	background: #ECECEC ;
+}
+
+.white-bandaid{
+	background: #FFFFFF !important;
+}
+
 .matrix{
 	text-align: center;
 	background: #ECECEC;
@@ -1139,7 +1165,15 @@ form{
 	color: white !important;
 }
 
-#know button, #partner button, #success button, #stories button, #apply button, #black_btn button{
+#smaller_btn{
+	font-size: 15px !important;
+	font-weight: normal !important;
+	text-align: left !important;
+	padding-left: 13% !important;
+	margin: none !important;
+}
+
+#know button, #partner button, #success button, #stories button, #apply button, #black_btn button, #smaller_btn button{
 	background-color: transparent;
 	border: solid;
 	border-radius: 36px;
@@ -1237,30 +1271,49 @@ form{
 	padding-top: 50px;	
 }
 
+.btn-group .btn:first-child,
+.btn-group .btn:last-child {
+ 	border-radius: 0;
+}
+
 .btn-jumbotron {
-	color: #F38321;
-	background-color: #fff;
-	border-color: #F38321;
+	font-size: 18px !important;
+	line-height: 20px;
+	font-weight: bold;
+	text-transform: none !important;
+	width: 12vw;
+	color: #707070;
+	background-color: transparent;
+	border: none;
+	opacity: 1.0 !important;
+	padding-bottom: 3vh;
 }
 
 .btn-jumbotron:focus,
 .btn-jumbotron.focus {
-	color: #fff;
-	background-color: #F38321;
-	border-color: #F8A046;
+	/*color: #fff;*/
+	border-color: transparent;
+	border-bottom: 4px solid #F15E27;
+	box-shadow: none;
+	color: #F15E27 !important; 
 }
 
 .btn-jumbotron:hover {
-	color: #fff;
-	background-color: #F8A046;
-	border-color: #F38321;
+	/*color: #fff;*/
+	/*background-color: #F8A046;*/
+	border-bottom: 3px solid #48020;
+	color: #F48020;
 }
 
 .btn-jumbotron:active,
 .btn-jumbotron.active {
-	color: #fff;
-	background-color: #F38321;
-	border-color: #F8A046;
+	/*color: #fff;*/
+	/*background-color: #F38321;*/
+	border-color: transparent;
+	border-bottom: 4px solid #F15E27;
+	box-shadow: none;
+	color: #F15E27 !important; 
+
 }
 
 .btn.btn-sm.btn-jumbotron {
