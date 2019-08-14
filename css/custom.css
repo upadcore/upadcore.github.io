@@ -73,7 +73,11 @@ html, body {
 }
 
 .select-css:focus{
-	color: black;	
+	color: white;	
+}
+
+select option{
+	color: black !important;
 }
 
 input[placeholder], input, textarea{
