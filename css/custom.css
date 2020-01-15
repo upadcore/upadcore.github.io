@@ -289,6 +289,11 @@ form{
 	transition: background-color 0.2s;
 }
 
+.navbar-left {
+	width: 100px;
+	height: 100px;
+}
+
 .navbar.colorize {
 	background-image: url('/img/header.png');
 	background-size: cover;
