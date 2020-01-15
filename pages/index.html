@@ -557,7 +557,7 @@ function doOnScroll() {
     navbar_bcr = navbar.getBoundingClientRect();
     if((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
       if (!(hasClass(navbar,'colorize'))) {
-        $("#navbar").show("fade");
+        $("#navbar").show("slow");
         navbar.classList.add('colorize');
         navbar_brand.classList.add('colorize');
         firstli.classList.remove('active');
@@ -566,7 +566,7 @@ function doOnScroll() {
     }
     else {
       if ((hasClass(navbar,'colorize')) && ((jumbotron_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) >= 0)) {
-        $("#navbar").hide("fade");
+        $("#navbar").hide("slow");
         if(window.getComputedStyle(navbar).display == "none"){
           navbar.classList.remove('colorize');
         }
