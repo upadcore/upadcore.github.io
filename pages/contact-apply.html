@@ -64,7 +64,7 @@ layout: default
 
     <script type="text/javascript">var submitted=false;</script>
      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-     onload="if(submitted){window.location='/contact.html'; showPopUp()}"></iframe>
+     onload="if(submitted){ onSubmit()}"></iframe>
 
     <form id="plswork" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSf8eIB7zpZjCTxjeFTQrU0ZpQjpjudtB-VtD_LSjaEFVTtOUA/formResponse" method="post" style="position:relative" target="hidden_iframe" onsubmit="submitted=true;">
       <div id="space_pls"></div>
@@ -228,9 +228,11 @@ $('.button-more').click(function(event){
 <script>
   //FORM SCRIPT
 
-  function showPopUp(){
-    console.log("pop");
+  function onSubmit(){
+    alert("Thanks for filling up the form. We'll get in touch with you soon!");
+    location.href = "/";
   }
+
   $(document).ready(function(){
     $("input").focus(function(){
       $("label#" + $(this).attr('id')).css("opacity", "1.0");
