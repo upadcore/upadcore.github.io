@@ -1038,6 +1038,10 @@ form{
 	margin-bottom: 10%;
 }
 
+#teenspeak-special-card-1 {
+	display: none;
+}
+
 #portfolio {
 	padding-bottom: 10%;
 }
@@ -2729,6 +2733,14 @@ ol.carousel-green li.active {
 
 	#stories {
 		margin-top: -6%;
+	}
+
+	#teenspeak-special-card-1 {
+		display: block;
+	}
+
+	#teenspeak-special-card-2 {
+		display: none;
 	}
 
 }
