@@ -2607,6 +2607,7 @@ ol.carousel-green li.active {
 
 	#know {
 		background-position: top;
+		padding-top: 0px;
 	}
 
 	#jumbotron-home, #jumbotron-about {
@@ -2678,6 +2679,7 @@ ol.carousel-green li.active {
 
 	#know {
 		background-position: top;
+		padding-top: 0px;
 	}
 
 	#design .column, #brand .column img, #beforefooter .column {
