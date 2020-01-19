@@ -2544,7 +2544,7 @@ ol.carousel-green li.active {
 		padding-left: 2%;
 	}
 
-	#know h1, #teenspeak h1, #portfolio h1, #clients h1, #partner h1, #success h1 {
+	#know h1, #teenspeak h1, #portfolio h1, #clients h1, #partner h1, #success h1, #design h1, #brand h1 {
 		font-size: 520%;
 	}
 
@@ -2597,7 +2597,7 @@ ol.carousel-green li.active {
 		margin-right: 20%;
 	}
 
-	#know h1, #teenspeak h1, #portfolio h1, #clients h1, #partner h1, #success h1 {
+	#know h1, #teenspeak h1, #portfolio h1, #clients h1, #partner h1, #success h1. #design h1, #brand h1 {
 		font-size: 400%;
 	}
 
@@ -2617,7 +2617,7 @@ ol.carousel-green li.active {
 	#jumbotron-services {
 		min-height: 73vh !important;
 	}
-	
+
 	.footer small {
 		font-size: 11px;
 	}
@@ -2652,7 +2652,7 @@ ol.carousel-green li.active {
 		margin-left: -10%;
 	}
 
-	#know h1, #teenspeak h1, #portfolio h1, #clients h1, #partner h1, #success h1 {
+	#know h1, #teenspeak h1, #portfolio h1, #clients h1, #partner h1, #success h1, #design h1, #brand h1 {
 		font-size: 400%;
 	}
 
@@ -2691,15 +2691,44 @@ ol.carousel-green li.active {
 	}
 
 	#beforefooter .column {
-		margin-bottom: 10%;
+		margin-bottom: 7%;
 	}
-	
+
 	.footer small {
 		font-size: 11px;
 	}
-	
+
 	#success h1 {
 		padding-right: 5%;
 		padding-left: 5%;
 	}
+
+	#design-text-1, #brand-text-1, #partner-text-1 {
+		font-size: 100% !important;
+	}
+
+	#brand h3 {
+		padding: 7%;
+	}
+
+	#partner img {
+		width: 50% !important;
+	}
+
+	#partner-text-0 {
+		font-size: 150% !important;
+	}
+
+	#stories-card1 .column, #stories-card4 .column, #stories-card2 .column {
+		width: 100% !important;
+	}
+
+	.stories-card {
+		width: 100% !important;
+	}
+
+	#stories {
+		margin-top: -6%;
+	}
+
 }
