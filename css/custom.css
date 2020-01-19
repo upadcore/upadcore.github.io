@@ -2617,6 +2617,10 @@ ol.carousel-green li.active {
 	#jumbotron-services {
 		min-height: 73vh !important;
 	}
+	
+	.footer small {
+		font-size: 11px;
+	}
 }
 
 @media (min-width: 0px) and (max-width: 450px) {
@@ -2688,6 +2692,10 @@ ol.carousel-green li.active {
 
 	#beforefooter .column {
 		margin-bottom: 10%;
+	}
+	
+	.footer small {
+		font-size: 11px;
 	}
 
 }
