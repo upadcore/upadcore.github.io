@@ -6,7 +6,7 @@ layout: default
 
 <div id="jumbotron-home">
   <div class="row row-main header" id="jumbotron">
-    <nav>
+    <nav id="secondary-navbar-nav">
       <ul>
         <div class="col-lg-2 col-lg-offset-0 col-md-2 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-0" id="homecol1">
           <li><a href="/about/"">ABOUT</a>
@@ -108,31 +108,52 @@ layout: default
     </div>
   </h3>
 </div> -->
-
-<div class="row row-main page-section page-section-colored page-section-green adjust" id="portfolio" style="background-color: transparent; !important; padding-bottom: 0% !important; margin-top: -20% !important;">
-  <div id="success-stories-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
-    <ol class="carousel-indicators index-carousel">
-      <li data-target="#success-stories-carousel" data-slide-to="0" class="active" id="firstli"></li>
-      <li data-target="#success-stories-carousel" data-slide-to="1" id="secondli"></li><!-- 
-      <li data-target="#design-solutions" data-slide-to="2"></li> -->
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class="img-wrapper div-portfolio">
-          <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6">
-            <div>
-              <div style="padding-top: 0% !important;">
-                <div class="home-stories-card" id="home-stories-card1">
-                  <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
-                    <div class="column" style="width: 100% !important;">
-                      PHILIPPINE STUDENT QUILL AWARDS <br>
+<div id="primary-portfolio">
+  <div class="row row-main page-section page-section-colored page-section-green adjust" id="portfolio" style="background-color: transparent; !important; padding-bottom: 0% !important; margin-top: -20% !important;">
+    <div id="success-stories-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      <ol class="carousel-indicators index-carousel">
+        <li data-target="#success-stories-carousel" data-slide-to="0" class="active" id="firstli"></li>
+        <li data-target="#success-stories-carousel" data-slide-to="1" id="secondli"></li><!-- 
+        <li data-target="#design-solutions" data-slide-to="2"></li> -->
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="img-wrapper div-portfolio">
+            <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6" id="portfolio-card">
+              <div>
+                <div style="padding-top: 0% !important;">
+                  <div class="home-stories-card" id="home-stories-card1">
+                    <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
+                      <div class="column" style="width: 100% !important;">
+                        PHILIPPINE STUDENT QUILL AWARDS <br>
+                        <button id="stories-button">
+                          SUBHEAD INPUT
+                        </button>
+                        <br><br>
+                        <small class="home-stories-small">
+                          <div style="line-height: 170% !important;">
+                            Organized by the IABC, the PSQA honors excellence in communication in the undergraduate levels. UP AdCore was one of the organizations to have received two Awards of Excellence, the higher tier award in PSQA's recognition hierarchy.
+                          </div>
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6" id="portfolio-card">
+              <div>
+                <div style="padding-top: 0% !important;">
+                  <div class="home-stories-card" id="home-stories-card5">
+                    <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
+                      FAO AWARDS <br><br>
                       <button id="stories-button">
                         SUBHEAD INPUT
                       </button>
                       <br><br>
                       <small class="home-stories-small">
                         <div style="line-height: 170% !important;">
-                          Organized by the IABC, the PSQA honors excellence in communication in the undergraduate levels. UP AdCore was one of the organizations to have received two Awards of Excellence, the higher tier award in PSQA's recognition hierarchy.
+                          UP Advertising Core was hailed as the Organization of the Year for the first-ever Federation of Advertising Organizations Awards this 2013, participated on by different organizations from schools all over NCR.
                         </div>
                       </small>
                     </div>
@@ -140,43 +161,23 @@ layout: default
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6">
-            <div>
-              <div style="padding-top: 0% !important;">
-                <div class="home-stories-card" id="home-stories-card5">
-                  <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
-                    FAO AWARDS <br><br>
-                    <button id="stories-button">
-                      SUBHEAD INPUT
-                    </button>
-                    <br><br>
-                    <small class="home-stories-small">
-                      <div style="line-height: 170% !important;">
-                        UP Advertising Core was hailed as the Organization of the Year for the first-ever Federation of Advertising Organizations Awards this 2013, participated on by different organizations from schools all over NCR.
+            <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6" id="portfolio-card">
+              <div>
+                <div style="padding-top: 0% !important;">
+                  <div class="home-stories-card" id="home-stories-card2">
+                    <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
+                      <div class="column" style="width: 100% !important;">
+                        AIESEC YOUTH LEADERSHIP AWARDS <br>
+                        <button id="stories-button1" style=" color: white !important;">
+                          SUBHEAD INPUT
+                        </button>
+                        <br><br>
+                        <small class="home-stories-small">
+                          <div style="line-height: 170% !important;">
+                            The AIESEC Youth Leadership Awards aims to celebrate five youth organizations who, driven by a clear purpose, have shown exemplary leadership through leading by example and by continuous improvement in their fields. UP AdCore is one of the five recipients of this pioneer award by AIESEC Philippines.
+                          </div>
+                        </small>
                       </div>
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6">
-            <div>
-              <div style="padding-top: 0% !important;">
-                <div class="home-stories-card" id="home-stories-card2">
-                  <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
-                    <div class="column" style="width: 100% !important;">
-                      AIESEC YOUTH LEADERSHIP AWARDS <br>
-                      <button id="stories-button1" style=" color: white !important;">
-                        SUBHEAD INPUT
-                      </button>
-                      <br><br>
-                      <small class="home-stories-small">
-                        <div style="line-height: 170% !important;">
-                          The AIESEC Youth Leadership Awards aims to celebrate five youth organizations who, driven by a clear purpose, have shown exemplary leadership through leading by example and by continuous improvement in their fields. UP AdCore is one of the five recipients of this pioneer award by AIESEC Philippines.
-                        </div>
-                      </small>
                     </div>
                   </div>
                 </div>
@@ -184,43 +185,21 @@ layout: default
             </div>
           </div>
         </div>
-      </div>
-      <div class="item">
-        <div class="img-wrapper div-portfolio">
-          <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6">
-            <div>
-              <div style="padding-top: 0% !important;">
-                <div class="home-stories-card" id="home-stories-card3">
-                  <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
-                    SMART LEAGUE OF LEADERS <br>
-                    <button id="stories-button">
-                      SUBHEAD INPUT
-                    </button>
-                    <br><br>
-                    <small class="home-stories-small">
-                      <div style="line-height: 170% !important;">
-                        The SMART League of Leaders is Smart Prepaid's advocacy project that seeks to empower student groups with the skills, knowledge and resources they need to reach their goals. UP AdCore was hailed as one of the top 10 organizations and an official part of the SMART League of Leaders last April 11.
-                      </div>
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6">
-            <div>
-              <div style="padding-top: 0% !important;">
-                <div class="home-stories-card" id="home-stories-card4">
-                  <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
-                    <div class="column" style="width: 100% !important;">
-                      VILLAR SIPAG LEAGUE OF EXCELLENCE AWARDS <br>
+        <div class="item">
+          <div class="img-wrapper div-portfolio">
+            <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6" id="portfolio-card">
+              <div>
+                <div style="padding-top: 0% !important;">
+                  <div class="home-stories-card" id="home-stories-card3">
+                    <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
+                      SMART LEAGUE OF LEADERS <br>
                       <button id="stories-button">
                         SUBHEAD INPUT
                       </button>
                       <br><br>
                       <small class="home-stories-small">
                         <div style="line-height: 170% !important;">
-                          The Villar Sipag League of Excellence is an awards night organized by the UP Business League to recognize the most notable feats accomplished by its 16 member organizations. Various categories are contended for and top performers are awarded. In the past 2 years, Up AdCore has clinched 7 of these prestigious awards, 3 of them belonging to the Platinum Award Category; including the most notable: Organization of the Year.
+                          The SMART League of Leaders is Smart Prepaid's advocacy project that seeks to empower student groups with the skills, knowledge and resources they need to reach their goals. UP AdCore was hailed as one of the top 10 organizations and an official part of the SMART League of Leaders last April 11.
                         </div>
                       </small>
                     </div>
@@ -228,22 +207,44 @@ layout: default
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6">
-            <div>
-              <div style="padding-top: 0% !important;">
-                <div class="home-stories-card" id="home-stories-card6">
-                  <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
-                    MOST WELL-ATTENDED ACLE <br>
-                    <button id="stories-button">
-                      SUBHEAD INPUT
-                    </button>
-                    <br><br>
-                    <small class="home-stories-small">
-                      <div style="line-height: 170% !important;">
-                        USC has awarded various organizations who were able to organize outstanding learning experiences for the students. UP AdCore received the most well-attended ACLE having been able to fill the Benitez Hall with students who were interested learn more about stories behind well-known commercials.
+            <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6" id="portfolio-card">
+              <div>
+                <div style="padding-top: 0% !important;">
+                  <div class="home-stories-card" id="home-stories-card4">
+                    <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
+                      <div class="column" style="width: 100% !important;">
+                        VILLAR SIPAG LEAGUE OF EXCELLENCE AWARDS <br>
+                        <button id="stories-button">
+                          SUBHEAD INPUT
+                        </button>
+                        <br><br>
+                        <small class="home-stories-small">
+                          <div style="line-height: 170% !important;">
+                            The Villar Sipag League of Excellence is an awards night organized by the UP Business League to recognize the most notable feats accomplished by its 16 member organizations. Various categories are contended for and top performers are awarded. In the past 2 years, Up AdCore has clinched 7 of these prestigious awards, 3 of them belonging to the Platinum Award Category; including the most notable: Organization of the Year.
+                          </div>
+                        </small>
                       </div>
-                    </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 cold-md-4 col-sm-4 col-xs-6" id="portfolio-card"> 
+              <div>
+                <div style="padding-top: 0% !important;">
+                  <div class="home-stories-card" id="home-stories-card6">
+                    <div class="row" style="font-size: 200% !important; padding-left: 5%; padding-right: 5%;">
+                      MOST WELL-ATTENDED ACLE <br>
+                      <button id="stories-button">
+                        SUBHEAD INPUT
+                      </button>
+                      <br><br>
+                      <small class="home-stories-small">
+                        <div style="line-height: 170% !important;">
+                          USC has awarded various organizations who were able to organize outstanding learning experiences for the students. UP AdCore received the most well-attended ACLE having been able to fill the Benitez Hall with students who were interested learn more about stories behind well-known commercials.
+                        </div>
+                      </small>
+                    </div>
                   </div>
                 </div>
               </div>
