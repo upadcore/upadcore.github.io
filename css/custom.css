@@ -309,7 +309,6 @@ form{
 	color: white;
     padding: 3%;
     padding-left: 20px;
-    padding-right: 40%;
 }
 
 #navbar-brand{
@@ -355,7 +354,7 @@ form{
 }
 
 .navbar-dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -375,28 +374,29 @@ form{
 }
 
 /* BEGIN HORIZONTAL DROP-MENU */
-nav {
-    position: relative;
-    width: 100%;  /**adjust width as needed**/
+#navbar-nav {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    /**width: 100%;  /**adjust width as needed**/
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    z-index:1000;
 }
 
-nav ul {
+#navbar-nav ul {
     margin: 0;
     padding-top: 4%;
 }
 
-nav li {
+#navbar-nav li {
     list-style: none;
     font-size: 12px;
     float: left;
     text-align: center;
 }
 /**top level menu**/
-nav li a {
+#navbar-nav li a {
     display: block;
     text-decoration: none !important;
     margin-right: 2px;   /* space between links */
@@ -407,14 +407,15 @@ nav li a {
     color: white;
     background: transparent;
 }
+
 /**top menu style on mouse over**/
-nav li:hover > a {
+#navbar-nav li:hover > a {
     color: white;
 	border-top: 4px solid white;
 }
 
 /**sub-menu**/
-nav li ul {
+#navbar-nav li ul {
     display: none;
     text-align: center;
     margin: 0;
@@ -424,17 +425,19 @@ nav li ul {
 }
 
 /**sub-menu, help for older IE**/
-nav li:hover ul, nav li.hover ul {
+#navbar-nav li:hover ul, 
+#navbar-nav li.hover ul {
     display: block;
     position: absolute;
     padding: 0;
 }
 
-nav li:hover li, 
-nav li.hover li {float: none;}
+#navbar-nav li:hover li, 
+#navbar-nav li.hover li {float: none;}
 
 /**drop-menu style**/
-nav li:hover li a, nav li.hover li a {
+#navbar-nav li:hover li a, 
+#navbar-nav li.hover li a {
     width: 9em;  /* adjust width as needed or use auto */
     margin-top: 0;
     line-height: 1.25em;
@@ -442,12 +445,89 @@ nav li:hover li a, nav li.hover li a {
     border: none;
 }
 
-nav li li a {
+#navbar-nav li li a {
 	color: black;
 }
 
 /**drop-menu style on mouse over**/
-nav li li a:hover {
+#navbar-nav li li a:hover {
+    color: #F36523;
+}
+
+/* SECONDARY NAVBAR */
+#secondary-navbar-nav {
+    /**width: 100%;  /**adjust width as needed**/
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+#secondary-navbar-nav ul {
+    margin: 0;
+    padding-top: 4%;
+}
+
+#secondary-navbar-nav li {
+    list-style: none;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+}
+/**top level menu**/
+#secondary-navbar-nav li a {
+    display: block;
+    text-decoration: none !important;
+    margin-right: 2px;   /* space between links */
+    padding: 6px 15px;
+    font-size: 135%;
+    line-height: 2em;
+    color: white;
+    background: transparent;
+}
+
+/**top menu style on mouse over**/
+#secondary-navbar-nav li:hover > a {
+    color: white;
+	border-top: 4px solid white;
+}
+
+/**sub-menu**/
+#secondary-navbar-nav li ul {
+    display: none;
+    text-align: center;
+    margin: 0;
+    padding: 0 1em;
+    background: white;
+    font-weight: normal;
+}
+
+/**sub-menu, help for older IE**/
+#secondary-navbar-nav li:hover ul, 
+#secondary-navbar-nav li.hover ul {
+    display: block;
+    position: absolute;
+    padding: 0;
+}
+
+#secondary-navbar-nav li:hover li, 
+#secondary-navbar-nav li.hover li {float: none;}
+
+/**drop-menu style**/
+#secondary-navbar-nav li:hover li a, 
+#secondary-navbar-nav li.hover li a {
+    width: 9em;  /* adjust width as needed or use auto */
+    margin-top: 0;
+    line-height: 1.25em;
+    font-weight: normal;
+    border: none;
+}
+
+#secondary-navbar-nav li li a {
+	color: black;
+}
+
+/**drop-menu style on mouse over**/
+#secondary-navbar-nav li li a:hover {
     color: #F36523;
 }
 
@@ -480,22 +560,9 @@ nav li li a:hover {
 	transition: all 0.5s;
 }
 
-@media (max-width: 767px) {
-/*@media (max-width: 768px) {*/
-.navbar-menu {
-	width: 100vw;
-	right: -100vw;
-	transition: all 0.5s;
-}
-
-.navbar-menu.active {
-	right: 0px;
-	transition: all 0.5s;
-}
-}
 
 .navbar-toggle {
-	display: inline-block;
+	display: none;
 	float: right;
 	margin: 0;
 	border-style: none;
@@ -518,6 +585,83 @@ nav li li a:hover {
 	text-decoration: none !important;
 	cursor: pointer;
 	float: right;
+}
+
+/*COLLAPSED NAVBAR DROPDOWN*/
+
+.dropbtn {
+  background-color: transparent;
+	color: white;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#navbar-button:focus {
+	border: 3px solid white;
+}
+
+.dropdownbtn.colorize {
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 130px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+@media (max-width: 1150px) {
+	.navbar-menu {
+		width: 100vw;
+		right: -100vw;
+		transition: all 0.5s;
+	}
+
+	.navbar-menu.active {
+		right: 0px;
+		transition: all 0.5s;
+	}
+
+	.navbar-logo {
+		width: 75px;
+		height: 75px;
+		margin-top: 20px;
+	}
+
+	.wrapper-navbar-items {
+		display: none;
+	}
+
+	.navbar.colorize {
+		background-position: center 15%;
+		height: 20%;
+	}
+
+	.navbar-toggle {
+		display: block;
+		margin-top: 20px;
+	}
 }
 
 .navbar-menu ul {
@@ -664,95 +808,6 @@ nav li li a:hover {
 }
 }
 */
-
-@media (min-width: 920px) and (max-width: 1199px) {
-/*@media (min-width: 992px) and (max-width: 1199px) {*/
-.col-md-12.col-md-12-main {
-	max-width: 920px;
-	margin-left: calc((100vw - 920px) / 2);
-	margin-right: calc((100vw - 920px) / 2);
-}
-}
-
-@media (min-width: 620px) and (max-width: 1410px) {
-.new-navbar-brand {
-	color: white !important;
-	text-decoration: none !important;
-	font-size: 110%; 
-}
-}
-
-@media (min-width: 920px) and (max-width: 1410px) {
-.img-responsive.img-logo {
-	max-width: 90px;
-	margin: auto;
-}
-
-.row.row-main.header {
-	padding-left: 20%;
-	padding-right: 20%;
-}
-}
-
-@media (min-width: 620px) and (max-width: 920px) {
-.img-responsive.img-logo {
-	max-width: 90px;
-	margin: auto;
-}
-
-.row.row-main.header {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-}
-
-@media (min-width: 450px) and (max-width: 620px) {
-.new-navbar-brand {
-	color: white !important;
-	text-decoration: none !important;
-	font-size: 90%;
-	text-align: center;
-}
-
-.img-responsive.img-logo {
-	max-width: 80px;
-	margin: auto;
-}
-
-.row.row-main.header {
-	padding-left: 5%;
-	padding-right: 5%;
-}
-}
-
-@media (min-width: 0px) and (max-width: 450px) {
-.new-navbar-brand {
-	color: white !important;
-	text-decoration: none !important;
-	font-size: 75%;
-	text-align: center;
-}
-
-.img-responsive.img-logo {
-	max-width: 60px;
-	margin: auto;
-}
-
-.row.row-main.header {
-	padding-left: 2%;
-	padding-right: 0%;
-}
-
-#jumbotron-home {
-	background-image: url('/img/home12.png');
-	background-size: cover;
-	background-position: center 45%;
-	min-height: 65vh !important;
-	padding-top: 15px !important;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-}
-
 
 /*
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1067,7 +1122,7 @@ nav li li a:hover {
 }
 
 .home-stories-card {
-	font-size: 150% !important;
+	font-size: 140% !important;
 	text-align: center;
 	width: 100%;
 	min-height: 75vh;
@@ -1123,7 +1178,6 @@ nav li li a:hover {
 	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
     url('/img/about7.jpg');
 	background-position: left -3% bottom 65%;
-	font-size: 150% !important;
 }
 
 #home-stories-card5 {
@@ -2428,4 +2482,210 @@ ol.carousel-green li.active {
     height: 85vw;
   }
   
+}
+
+@media (min-width: 800px) {
+	#secondary-navbar-nav li a {
+	    width: 9em;
+	}
+
+	#success-stories-carousel {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	#portfolio-card {
+		margin: 10px;
+	}
+
+}
+
+@media (min-width: 920px) and (max-width: 1199px) {
+	/*@media (min-width: 992px) and (max-width: 1199px) {*/
+	.col-md-12.col-md-12-main {
+		max-width: 920px;
+		margin-left: calc((100vw - 920px) / 2);
+		margin-right: calc((100vw - 920px) / 2);
+	}
+}
+
+@media (min-width: 620px) and (max-width: 1410px) {
+	.new-navbar-brand {
+		color: white !important;
+		text-decoration: none !important;
+		font-size: 110%; 
+	}
+}
+
+@media (min-width: 920px) and (max-width: 1410px) {
+	.img-responsive.img-logo {
+		max-width: 90px;
+		margin: auto;
+	}
+
+	.row.row-main.header {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+@media (min-width: 620px) and (max-width: 920px) {
+	.img-responsive.img-logo {
+		max-width: 90px;
+		margin: auto;
+	}
+
+	.row.row-main.header {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	#homecol1 {
+		padding-left: 2%;
+	}
+
+	#know h1, #teenspeak h1, #portfolio h1, #clients h1, #partner h1, #success h1 {
+		font-size: 520%;
+	}
+
+	#jumbotron-home, #jumbotron-about {
+		min-height: 65vh !important;
+	}
+
+	#jumbotron-services {
+		min-height: 73vh !important;
+	}
+
+	#primary-portfolio {
+		display: none;
+	}
+
+	#know {
+		background-position: center 30%;
+	}
+
+	#design .column, #brand .column img {
+		width: 100%;
+	}
+}
+
+@media (min-width: 450px) and (max-width: 620px) {
+	.new-navbar-brand {
+		color: white !important;
+		text-decoration: none !important;
+		font-size: 90%;
+		text-align: center;
+	}
+
+	.img-responsive.img-logo {
+		max-width: 80px;
+		margin: auto;
+	}
+
+	.row.row-main.header {
+		padding-left: 0%;
+		padding-right: 0%;
+	}	
+
+	#homecol1 {
+		padding-left: 22%;
+	}
+
+	#secondary-navbar-nav li a {
+		font-size: 100%;
+		padding: 0px;
+		margin-right: 20%;
+	}
+
+	#know h1, #teenspeak h1, #portfolio h1, #clients h1, #partner h1, #success h1 {
+		font-size: 400%;
+	}
+
+	#primary-portfolio {
+		display: none;
+	}
+
+	#know {
+		background-position: top;
+	}
+
+	#jumbotron-home, #jumbotron-about {
+		min-height: 65vh !important;
+	}
+
+	#jumbotron-services {
+		min-height: 73vh !important;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 450px) {
+	.new-navbar-brand {
+		color: white !important;
+		text-decoration: none !important;
+		font-size: 75%;
+		text-align: center;
+	}
+
+	.img-responsive.img-logo {
+		max-width: 60px;
+		margin: auto;
+	}
+
+	.row.row-main.header {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	#homecol1 {
+		padding-left: 2%;
+	}
+
+	#secondary-navbar-nav li a {
+		font-size: 100%;
+		padding: 0px;
+		margin-right: 20%;
+		margin-left: -10%;
+	}
+
+	#know h1, #teenspeak h1, #portfolio h1, #clients h1, #partner h1, #success h1 {
+		font-size: 400%;
+	}
+
+	#design h3 {
+		padding-bottom: 10%;
+		padding-top: 2%;
+	}
+
+	.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, #success button {
+		font-size: 55%;
+	}
+
+	#jumbotron-home, #jumbotron-about {
+		min-height: 65vh !important;
+	}
+
+	#jumbotron-services {
+		min-height: 73vh !important;
+	}
+
+	#jumbotron-contact {
+		min-height: 65vh !important;
+	}
+
+	#primary-portfolio {
+		display: none;
+	}
+
+	#know {
+		background-position: top;
+	}
+
+	#design .column, #brand .column img, #beforefooter .column {
+		width: 100%;
+	}
+
+	#beforefooter .column {
+		margin-bottom: 10%;
+	}
+
 }
